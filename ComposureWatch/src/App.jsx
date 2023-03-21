@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import Body from "./Components/Body";
 import GlobalContainer from "./Components/GlobalContainer";
 import Header from "./Components/Header";
+import TitleSection from "./Components/TitleSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Body>
         <GlobalContainer>
           <Header />
+          <TitleSection />
         </GlobalContainer>
       </Body>
     </div>
