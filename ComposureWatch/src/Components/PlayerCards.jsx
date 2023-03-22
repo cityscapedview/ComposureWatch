@@ -1,9 +1,9 @@
 const PlayerCards = (props) => {
   return (
     <div>
-      <p>{props.playerInfo[0].name}</p>
-      <p>{props.playerInfo[0].character}</p>
-      <p>{props.playerInfo[0].rank}</p>
+      <p>{props.name}</p>
+      <p>{props.character}</p>
+      <p>{props.rank}</p>
     </div>
   );
 };

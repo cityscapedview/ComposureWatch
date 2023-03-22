@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import CardForm from "./CardForm";
 import PlayerCards from "./PlayerCards";
+import CardList from "./CardList";
 
-const DUMMY_CARDS = [
-  {
-    name: "Zen",
-    character: "Moira",
-    rank: "Platinum",
-  },
-];
+const DUMMY_CARDS = [{ name: "Zen", character: "Moira", rank: "Platinum" }];
 
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
@@ -26,7 +21,7 @@ const CreateCard = () => {
       <CardForm
       // onSaveCharData={onSaveCharDataHandler}
       />
-      <PlayerCards playerInfo={cards} />
+      <CardList info={cards} />
     </div>
   );
 };
