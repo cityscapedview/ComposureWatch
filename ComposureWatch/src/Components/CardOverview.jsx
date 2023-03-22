@@ -1,6 +1,6 @@
 const CardOverview = () => {
   return (
-    <div className="bg-gradient-to-r from-[#AE1518] via-[#8C1114] to-[#5B0B0E] flex justify-center">
+    <div className="bg-gradient-to-tr from-[#AE1518] via-[#8C1114] to-[#5B0B0E] flex justify-center">
       <div className="flex flex-row justify-center items-start  text-white py-14 px-12 gap-x-12 max-w-7xl">
         <div>
           <img src="src/IMG/Doomfist.png" alt="Doomfist" className="rounded" />
