@@ -6,6 +6,7 @@ import GlobalContainer from "./Components/GlobalContainer";
 import Header from "./Components/Header";
 import TitleSection from "./Components/TitleSection";
 import PurposeSection from "./Components/PurposeSection";
+import CardOverview from "./Components/CardOverview";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header />
           <TitleSection />
           <PurposeSection />
+          <CardOverview />
         </GlobalContainer>
       </Body>
     </div>
