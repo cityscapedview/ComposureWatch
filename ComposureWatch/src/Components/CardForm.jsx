@@ -23,8 +23,24 @@ const CardForm = () => {
     console.log(selectedRank);
   };
 
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const charData = {
+      name: enteredName,
+      character: selectedCharacter,
+      ranking: selectedRank,
+    };
+
+    console.log(charData);
+
+    setEnteredName("Enter Player Name");
+    setSelectedCharacter("Select Character");
+    setSelectedRank("Select Rank");
+  };
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div>
         <label>Name</label>
         <input
@@ -36,7 +52,12 @@ const CardForm = () => {
       </div>
       <div>
         <label htmlFor="character-select">Character</label>
-        <select name="character" id="character-select" className="text-black">
+        <select
+          name="character"
+          id="character-select"
+          className="text-black"
+          onChange={selectCharacterHandler}
+        >
           <option value="selector">{selectedCharacter}</option>
           <option value="dVa">D.Va</option>
           <option value="doomfist">Doomfist</option>
@@ -75,7 +96,12 @@ const CardForm = () => {
           <option value="zenyatta">Zenyatta</option>
         </select>
         <label htmlFor="ranking-select">Ranking</label>
-        <select name="ranking" id="ranking-select" className="text-black">
+        <select
+          name="ranking"
+          id="ranking-select"
+          onChange={selectRankHandler}
+          className="text-black"
+        >
           <option value="selector">{selectedRank}</option>
           <option value="7">Grand Master</option>
           <option value="6">Diamond</option>
