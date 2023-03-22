@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CardForm = () => {
+const CardForm = (props) => {
   const [enteredName, setEnteredName] = useState("Enter Player Name");
 
   const [selectedCharacter, setSelectedCharacter] =
@@ -34,6 +34,7 @@ const CardForm = () => {
 
     console.log(charData);
 
+    // props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
     setSelectedCharacter("Select Character");
     setSelectedRank("Select Rank");
