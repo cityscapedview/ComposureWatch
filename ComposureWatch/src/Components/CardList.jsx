@@ -3,7 +3,7 @@ import React from "react";
 import PlayerCards from "./PlayerCards";
 
 const CardList = (props) => {
-  if (props.info[0].name == "Zen") {
+  if (props.info.length === 0) {
     return <h2>No Cards</h2>;
   }
 
