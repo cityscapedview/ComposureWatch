@@ -156,7 +156,7 @@ const CharIcon = (props) => {
     <img
       src={charImg}
       alt="character portrait"
-      className="border-2 border-black rounded-xl shadow-2xl shadow-[#13336C]"
+      className="border-2 border-black rounded-full shadow-2xl shadow-[#13336C]"
     />
   );
 };

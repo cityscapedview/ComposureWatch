@@ -36,13 +36,7 @@ const RankIcon = (props) => {
     charRank = rank.img;
   }
 
-  return (
-    <img
-      src={charRank}
-      alt="character rank"
-      className="border-2 border-black rounded-xl shadow-2xl shadow-[#13336C]"
-    />
-  );
+  return <img src={charRank} alt="character rank" className="" />;
 };
 
 export default RankIcon;
