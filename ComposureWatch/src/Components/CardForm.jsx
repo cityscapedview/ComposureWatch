@@ -104,13 +104,13 @@ const CardForm = (props) => {
           className="text-black"
         >
           <option value="selector">{selectedRank}</option>
-          <option value="7">Grand Master</option>
-          <option value="6">Diamond</option>
-          <option value="5">Platinum</option>
-          <option value="4">Gold</option>
-          <option value="3">Silver</option>
-          <option value="2">Bronze</option>
-          <option value="1">Wood</option>
+          <option value="grandMaster">Grand Master</option>
+          <option value="master">Master</option>
+          <option value="diamond">Diamond</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
         </select>
       </div>
       <button
