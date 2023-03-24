@@ -149,7 +149,6 @@ const PlayerCards = (props) => {
   let charImg;
   let result = charList.find((item) => item.id == props.character);
   if (result) {
-    charImg = "src/IMG/portraits/moira.png";
     charImg = result.img;
   }
 
