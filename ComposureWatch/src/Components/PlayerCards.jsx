@@ -178,13 +178,13 @@ const PlayerCards = (props) => {
   ];
 
   let charRank;
-  let rank = rankList.find((item) => item.id == props.rank);
+  let rank = rankList.find((item) => item.id === props.rank);
   if (rank) {
     charRank = rank.img;
   }
 
   let charImg;
-  let result = charList.find((item) => item.id == props.character);
+  let result = charList.find((item) => item.id === props.character);
   if (result) {
     charImg = result.img;
   }
