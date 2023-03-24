@@ -6,7 +6,7 @@ import CardList from "./CardList";
 const DUMMY_CARDS = [
   {
     name: "Zen",
-    character: "Moira",
+    character: "Echo",
     rank: "Platinum",
   },
 ];

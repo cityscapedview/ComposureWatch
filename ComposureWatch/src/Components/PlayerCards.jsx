@@ -1,160 +1,156 @@
 const PlayerCards = (props) => {
   const charList = [
     {
-      name: "Moira",
-      img: "src/IMG/portrait-moira.png",
-    },
-    {
-      name: "D.Va",
+      id: "D.Va",
       img: "src/IMG/portraits/dVa.png",
     },
     {
-      name: "Doomfist",
+      id: "Doomfist",
       img: "src/IMG/portraits/doomfist.png",
     },
     {
-      name: "JunkerQueen",
+      id: "JunkerQueen",
       img: "src/IMG/portraits/junkerQueen.png",
     },
     {
-      name: "Orisa",
+      id: "Orisa",
       img: "src/IMG/portraits/orisa.png",
     },
     {
-      name: "Ramattra",
+      id: "Ramattra",
       img: "src/IMG/portraits/ramattra.png",
     },
     {
-      name: "Reinhardt",
+      id: "Reinhardt",
       img: "src/IMG/portraits/reinhardt.png",
     },
     {
-      name: "Roadhog",
+      id: "Roadhog",
       img: "src/IMG/portraits/roadHog.png",
     },
     {
-      name: "Sigma",
+      id: "Sigma",
       img: "src/IMG/portraits/sigma.png",
     },
     {
-      name: "Winston",
+      id: "Winston",
       img: "src/IMG/portraits/winston.png",
     },
     {
-      name: "Wrecking Ball",
+      id: "Wrecking Ball",
       img: "src/IMG/portraits/wreckingBall.png",
     },
     {
-      name: "Zarya",
+      id: "Zarya",
       img: "src/IMG/portraits/zarya.png",
     },
     {
-      name: "Ashe",
+      id: "Ashe",
       img: "src/IMG/portraits/ashe.png",
     },
     {
-      name: "Bastion",
+      id: "Bastion",
       img: "src/IMG/portraits/bastion.png",
     },
     {
-      name: "Cassidy",
+      id: "Cassidy",
       img: "src/IMG/portraits/cassidy.png",
     },
     {
-      name: "Echo",
+      id: "Echo",
       img: "src/IMG/portraits/echo.png",
     },
     {
-      name: "Genji",
+      id: "Genji",
       img: "src/IMG/portraits/genji.png",
     },
     {
-      name: "Hanzo",
+      id: "Hanzo",
       img: "src/IMG/portraits/hanzo.png",
     },
     {
-      name: "Junkrat",
+      id: "Junkrat",
       img: "src/IMG/portraits/junkrat.png",
     },
     {
-      name: "Mei",
+      id: "Mei",
       img: "src/IMG/portraits/mei.png",
     },
     {
-      name: "Pharah",
+      id: "Pharah",
       img: "src/IMG/portraits/pharah.png",
     },
     {
-      name: "Reaper",
+      id: "Reaper",
       img: "src/IMG/portraits/reaper.png",
     },
     {
-      name: "Sojourn",
+      id: "Sojourn",
       img: "src/IMG/portraits/sojourn.png",
     },
     {
-      name: "Soldier76",
+      id: "Soldier76",
       img: "src/IMG/portraits/soldier76.png",
     },
     {
-      name: "Sombra",
+      id: "Sombra",
       img: "src/IMG/portraits/sombra.png",
     },
     {
-      name: "Symmetra",
+      id: "Symmetra",
       img: "src/IMG/portraits/symmetra.png",
     },
     {
-      name: "Torbjorn",
+      id: "Torbjorn",
       img: "src/IMG/portraits/torbjorn.png",
     },
     {
-      name: "Tracer",
+      id: "Tracer",
       img: "src/IMG/portraits/tracer.png",
     },
     {
-      name: "Widowmaker",
+      id: "Widowmaker",
       img: "src/IMG/portraits/widowmaker.png",
     },
     {
-      name: "Ana",
+      id: "Ana",
       img: "src/IMG/portraits/ana.png",
     },
     {
-      name: "Baptiste",
+      id: "Baptiste",
       img: "src/IMG/portraits/baptiste.png",
     },
     {
-      name: "Brigitte",
+      id: "Brigitte",
       img: "src/IMG/portraits/brigitte.png",
     },
     {
-      name: "Kiriko",
+      id: "Kiriko",
       img: "src/IMG/portraits/kiriko.png",
     },
     {
-      name: "Lucio",
+      id: "Lucio",
       img: "src/IMG/portraits/lucio.png",
     },
     {
-      name: "Mercy",
+      id: "Mercy",
       img: "src/IMG/portraits/mercy.png",
     },
     {
-      name: "Moira",
+      id: "Moira",
       img: "src/IMG/portraits/moira.png",
     },
     {
-      name: "Zen",
+      id: "Zen",
       img: "src/IMG/portraits/zen.png",
     },
   ];
 
   let charImg;
-  if (props.character == "Moira") {
+  let result = charList.find((item) => item.id == props.character);
+  if (result) {
     charImg = "src/IMG/portraits/moira.png";
-  } else {
-    charImg = <h1>No Character Image Available.</h1>;
+    charImg = result.img;
   }
 
   return (
