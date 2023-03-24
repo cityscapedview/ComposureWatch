@@ -2,31 +2,31 @@ const RankIcon = (props) => {
   const rankList = [
     {
       id: "Bronze",
-      img: "src/IMG/badge/bronze.webp",
+      img: "src/images/badge/bronze.webp",
     },
     {
       id: "Silver",
-      img: "src/IMG/badge/silver.webp",
+      img: "src/images/badge/silver.webp",
     },
     {
       id: "Gold",
-      img: "src/IMG/badge/gold.webp",
+      img: "src/images/badge/gold.webp",
     },
     {
       id: "Platinum",
-      img: "src/IMG/badge/platinum.webp",
+      img: "src/images/badge/platinum.webp",
     },
     {
       id: "Diamond",
-      img: "src/IMG/badge/diamond.webp",
+      img: "src/images/badge/diamond.webp",
     },
     {
       id: "Master",
-      img: "src/IMG/badge/master.webp",
+      img: "src/images/badge/master.webp",
     },
     {
       id: "Grand Master",
-      img: "src/IMG/badge/grandmaster.webp",
+      img: "src/images/badge/grandmaster.webp",
     },
   ];
 

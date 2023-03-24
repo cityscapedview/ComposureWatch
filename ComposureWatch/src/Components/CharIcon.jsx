@@ -2,147 +2,147 @@ const CharIcon = (props) => {
   const charList = [
     {
       id: "D.Va",
-      img: "src/IMG/portraits/dVa.png",
+      img: "src/images/portraits/dVa.png",
     },
     {
       id: "Doomfist",
-      img: "src/IMG/portraits/doomfist.png",
+      img: "src/images/portraits/doomfist.png",
     },
     {
       id: "JunkerQueen",
-      img: "src/IMG/portraits/junkerQueen.png",
+      img: "src/images/portraits/junkerQueen.png",
     },
     {
       id: "Orisa",
-      img: "src/IMG/portraits/orisa.png",
+      img: "src/images/portraits/orisa.png",
     },
     {
       id: "Ramattra",
-      img: "src/IMG/portraits/ramattra.png",
+      img: "src/images/portraits/ramattra.png",
     },
     {
       id: "Reinhardt",
-      img: "src/IMG/portraits/reinhardt.png",
+      img: "src/images/portraits/reinhardt.png",
     },
     {
       id: "Roadhog",
-      img: "src/IMG/portraits/roadHog.png",
+      img: "src/images/portraits/roadHog.png",
     },
     {
       id: "Sigma",
-      img: "src/IMG/portraits/sigma.png",
+      img: "src/images/portraits/sigma.png",
     },
     {
       id: "Winston",
-      img: "src/IMG/portraits/winston.png",
+      img: "src/images/portraits/winston.png",
     },
     {
       id: "Wrecking Ball",
-      img: "src/IMG/portraits/wreckingBall.png",
+      img: "src/images/portraits/wreckingBall.png",
     },
     {
       id: "Zarya",
-      img: "src/IMG/portraits/zarya.png",
+      img: "src/images/portraits/zarya.png",
     },
     {
       id: "Ashe",
-      img: "src/IMG/portraits/ashe.png",
+      img: "src/images/portraits/ashe.png",
     },
     {
       id: "Bastion",
-      img: "src/IMG/portraits/bastion.png",
+      img: "src/images/portraits/bastion.png",
     },
     {
       id: "Cassidy",
-      img: "src/IMG/portraits/cassidy.png",
+      img: "src/images/portraits/cassidy.png",
     },
     {
       id: "Echo",
-      img: "src/IMG/portraits/echo.png",
+      img: "src/images/portraits/echo.png",
     },
     {
       id: "Genji",
-      img: "src/IMG/portraits/genji.png",
+      img: "src/images/portraits/genji.png",
     },
     {
       id: "Hanzo",
-      img: "src/IMG/portraits/hanzo.png",
+      img: "src/images/portraits/hanzo.png",
     },
     {
       id: "Junkrat",
-      img: "src/IMG/portraits/junkrat.png",
+      img: "src/images/portraits/junkrat.png",
     },
     {
       id: "Mei",
-      img: "src/IMG/portraits/mei.png",
+      img: "src/images/portraits/mei.png",
     },
     {
       id: "Pharah",
-      img: "src/IMG/portraits/pharah.png",
+      img: "src/images/portraits/pharah.png",
     },
     {
       id: "Reaper",
-      img: "src/IMG/portraits/reaper.png",
+      img: "src/images/portraits/reaper.png",
     },
     {
       id: "Sojourn",
-      img: "src/IMG/portraits/sojourn.png",
+      img: "src/images/portraits/sojourn.png",
     },
     {
       id: "Soldier76",
-      img: "src/IMG/portraits/soldier76.png",
+      img: "src/images/portraits/soldier76.png",
     },
     {
       id: "Sombra",
-      img: "src/IMG/portraits/sombra.png",
+      img: "src/images/portraits/sombra.png",
     },
     {
       id: "Symmetra",
-      img: "src/IMG/portraits/symmetra.png",
+      img: "src/images/portraits/symmetra.png",
     },
     {
       id: "Torbjorn",
-      img: "src/IMG/portraits/torbjorn.png",
+      img: "src/images/portraits/torbjorn.png",
     },
     {
       id: "Tracer",
-      img: "src/IMG/portraits/tracer.png",
+      img: "src/images/portraits/tracer.png",
     },
     {
       id: "Widowmaker",
-      img: "src/IMG/portraits/widowmaker.png",
+      img: "src/images/portraits/widowmaker.png",
     },
     {
       id: "Ana",
-      img: "src/IMG/portraits/ana.png",
+      img: "src/images/portraits/ana.png",
     },
     {
       id: "Baptiste",
-      img: "src/IMG/portraits/baptiste.png",
+      img: "src/images/portraits/baptiste.png",
     },
     {
       id: "Brigitte",
-      img: "src/IMG/portraits/brigitte.png",
+      img: "src/images/portraits/brigitte.png",
     },
     {
       id: "Kiriko",
-      img: "src/IMG/portraits/kiriko.png",
+      img: "src/images/portraits/kiriko.png",
     },
     {
       id: "Lucio",
-      img: "src/IMG/portraits/lucio.png",
+      img: "src/images/portraits/lucio.png",
     },
     {
       id: "Mercy",
-      img: "src/IMG/portraits/mercy.png",
+      img: "src/images/portraits/mercy.png",
     },
     {
       id: "Moira",
-      img: "src/IMG/portraits/moira.png",
+      img: "src/images/portraits/moira.png",
     },
     {
       id: "Zen",
-      img: "src/IMG/portraits/zen.png",
+      img: "src/images/portraits/zen.png",
     },
   ];
 
