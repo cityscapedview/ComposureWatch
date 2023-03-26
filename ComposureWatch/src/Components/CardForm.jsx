@@ -34,21 +34,24 @@ const CardForm = (props) => {
 
     console.log(charData);
 
-    // props.onSaveCharData(charData);
+    props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
     setSelectedCharacter("Select Character");
     setSelectedRank("Select Rank");
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form
+      onSubmit={submitHandler}
+      className="flex flex-col justify-center items-start gap-y-4 pb-12"
+    >
       <div>
         <label>Name</label>
         <input
           type="text"
           value={enteredName}
           onChange={nameChangeHandler}
-          className="text-black"
+          className="text-black block"
         />
       </div>
       <div>
@@ -56,7 +59,7 @@ const CardForm = (props) => {
         <select
           name="character"
           id="character-select"
-          className="text-black"
+          className="text-black block"
           onChange={selectCharacterHandler}
         >
           <option value="selector">{selectedCharacter}</option>
@@ -96,12 +99,14 @@ const CardForm = (props) => {
           <option value="moira">Moira</option>
           <option value="zenyatta">Zenyatta</option>
         </select>
+      </div>
+      <div>
         <label htmlFor="ranking-select">Ranking</label>
         <select
           name="ranking"
           id="ranking-select"
           onChange={selectRankHandler}
-          className="text-black"
+          className="text-black block"
         >
           <option value="selector">{selectedRank}</option>
           <option value="grandMaster">Grand Master</option>
