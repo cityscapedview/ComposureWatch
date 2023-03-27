@@ -60,6 +60,7 @@ const CardForm = (props) => {
           name="character"
           id="character-select"
           className="text-black block"
+          value={selectedCharacter}
           onChange={selectCharacterHandler}
         >
           <option value="selector">{selectedCharacter}</option>
@@ -105,6 +106,7 @@ const CardForm = (props) => {
         <select
           name="ranking"
           id="ranking-select"
+          value={selectedRank}
           onChange={selectRankHandler}
           className="text-black block"
         >
