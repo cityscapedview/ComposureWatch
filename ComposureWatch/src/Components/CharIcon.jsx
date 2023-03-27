@@ -1,147 +1,147 @@
 const CharIcon = (props) => {
   const charList = [
     {
-      id: "D.Va",
+      id: "dVa",
       img: "src/images/portraits/dVa.png",
     },
     {
-      id: "Doomfist",
+      id: "doomfist",
       img: "src/images/portraits/doomfist.png",
     },
     {
-      id: "JunkerQueen",
+      id: "junkerQueen",
       img: "src/images/portraits/junkerQueen.png",
     },
     {
-      id: "Orisa",
+      id: "orisa",
       img: "src/images/portraits/orisa.png",
     },
     {
-      id: "Ramattra",
+      id: "ramattra",
       img: "src/images/portraits/ramattra.png",
     },
     {
-      id: "Reinhardt",
+      id: "reinhardt",
       img: "src/images/portraits/reinhardt.png",
     },
     {
-      id: "Roadhog",
+      id: "roadhog",
       img: "src/images/portraits/roadHog.png",
     },
     {
-      id: "Sigma",
+      id: "sigma",
       img: "src/images/portraits/sigma.png",
     },
     {
-      id: "Winston",
+      id: "winston",
       img: "src/images/portraits/winston.png",
     },
     {
-      id: "Wrecking Ball",
+      id: "wreckingBall",
       img: "src/images/portraits/wreckingBall.png",
     },
     {
-      id: "Zarya",
+      id: "zarya",
       img: "src/images/portraits/zarya.png",
     },
     {
-      id: "Ashe",
+      id: "ashe",
       img: "src/images/portraits/ashe.png",
     },
     {
-      id: "Bastion",
+      id: "bastion",
       img: "src/images/portraits/bastion.png",
     },
     {
-      id: "Cassidy",
+      id: "cassidy",
       img: "src/images/portraits/cassidy.png",
     },
     {
-      id: "Echo",
+      id: "echo",
       img: "src/images/portraits/echo.png",
     },
     {
-      id: "Genji",
+      id: "genji",
       img: "src/images/portraits/genji.png",
     },
     {
-      id: "Hanzo",
+      id: "hanzo",
       img: "src/images/portraits/hanzo.png",
     },
     {
-      id: "Junkrat",
+      id: "junkrat",
       img: "src/images/portraits/junkrat.png",
     },
     {
-      id: "Mei",
+      id: "mei",
       img: "src/images/portraits/mei.png",
     },
     {
-      id: "Pharah",
+      id: "pharah",
       img: "src/images/portraits/pharah.png",
     },
     {
-      id: "Reaper",
+      id: "reaper",
       img: "src/images/portraits/reaper.png",
     },
     {
-      id: "Sojourn",
+      id: "sojourn",
       img: "src/images/portraits/sojourn.png",
     },
     {
-      id: "Soldier76",
+      id: "soldier76",
       img: "src/images/portraits/soldier76.png",
     },
     {
-      id: "Sombra",
+      id: "sombra",
       img: "src/images/portraits/sombra.png",
     },
     {
-      id: "Symmetra",
+      id: "symmetra",
       img: "src/images/portraits/symmetra.png",
     },
     {
-      id: "Torbjorn",
+      id: "torbjorn",
       img: "src/images/portraits/torbjorn.png",
     },
     {
-      id: "Tracer",
+      id: "tracer",
       img: "src/images/portraits/tracer.png",
     },
     {
-      id: "Widowmaker",
+      id: "widowmaker",
       img: "src/images/portraits/widowmaker.png",
     },
     {
-      id: "Ana",
+      id: "ana",
       img: "src/images/portraits/ana.png",
     },
     {
-      id: "Baptiste",
+      id: "baptiste",
       img: "src/images/portraits/baptiste.png",
     },
     {
-      id: "Brigitte",
+      id: "brigitte",
       img: "src/images/portraits/brigitte.png",
     },
     {
-      id: "Kiriko",
+      id: "kiriko",
       img: "src/images/portraits/kiriko.png",
     },
     {
-      id: "Lucio",
+      id: "lucio",
       img: "src/images/portraits/lucio.png",
     },
     {
-      id: "Mercy",
+      id: "mercy",
       img: "src/images/portraits/mercy.png",
     },
     {
-      id: "Moira",
+      id: "moira",
       img: "src/images/portraits/moira.png",
     },
     {
-      id: "Zen",
+      id: "zen",
       img: "src/images/portraits/zen.png",
     },
   ];
@@ -151,6 +151,7 @@ const CharIcon = (props) => {
   if (result) {
     charImg = result.img;
   }
+  console.log({ charImg, result, char: props.character });
 
   return (
     <img
