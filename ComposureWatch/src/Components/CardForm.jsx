@@ -83,7 +83,7 @@ const CardForm = (props) => {
           <option value="hanzo">Hanzo</option>
           <option value="junkrat">Junkrat</option>
           <option value="mei">Mei</option>
-          <option value="paharah">Pharah</option>
+          <option value="pharah">Pharah</option>
           <option value="reaper">Reaper</option>
           <option value="sojourn">Sojourn</option>
           <option value="soldier76">Soldier76</option>
