@@ -21,11 +21,23 @@ const CreateCard = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-[#009dff]  via-[#33b1ff] to-[#66c4ff] flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
-      <h2 className="text-3xl font-bold">Create Player Card</h2>
-      <p>Enter player information below</p>
-      <CardForm onSaveCharData={onSaveCharDataHandler} />
-      <CardList info={cards} />
+    <div>
+      <div className="bg-gradient-to-t from-[#009dff]  via-[#33b1ff] to-[#66c4ff] flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
+        <h2 className="text-3xl font-bold">Create Player Card</h2>
+        <p>Enter player information below</p>
+        <CardForm onSaveCharData={onSaveCharDataHandler} />
+      </div>
+      <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
+        <CardList info={cards} />
+
+        <div className="text-white font-bold italic text-8xl">VS</div>
+        <button
+          type="submit"
+          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100"
+        >
+          Kumite!
+        </button>
+      </div>
     </div>
   );
 };
