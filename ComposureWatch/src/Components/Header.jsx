@@ -8,7 +8,7 @@ const Header = () => {
           Blissard
         </div>
         <img
-          src="src/images/yinyang.jpg"
+          src="src/images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png"
           alt="yin-yang logo"
           className="pl-20 h-10"
         />
