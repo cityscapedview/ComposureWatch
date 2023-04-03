@@ -13,7 +13,7 @@ const PurposeSection = () => {
         </div>
         <div>
           <img
-            src="src/IMG/Kiriko.jpg"
+            src="src/images/Kiriko.jpg"
             alt="Kiriko Image"
             className="rounded"
           />

@@ -29,26 +29,29 @@ const CardForm = (props) => {
     const charData = {
       name: enteredName,
       character: selectedCharacter,
-      ranking: selectedRank,
+      rank: selectedRank,
     };
 
     console.log(charData);
 
-    // props.onSaveCharData(charData);
+    props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
     setSelectedCharacter("Select Character");
     setSelectedRank("Select Rank");
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form
+      onSubmit={submitHandler}
+      className="flex flex-col justify-center items-start gap-y-4 pb-12"
+    >
       <div>
         <label>Name</label>
         <input
           type="text"
           value={enteredName}
           onChange={nameChangeHandler}
-          className="text-black"
+          className="text-black block"
         />
       </div>
       <div>
@@ -56,7 +59,8 @@ const CardForm = (props) => {
         <select
           name="character"
           id="character-select"
-          className="text-black"
+          className="text-black block"
+          value={selectedCharacter}
           onChange={selectCharacterHandler}
         >
           <option value="selector">{selectedCharacter}</option>
@@ -79,7 +83,7 @@ const CardForm = (props) => {
           <option value="hanzo">Hanzo</option>
           <option value="junkrat">Junkrat</option>
           <option value="mei">Mei</option>
-          <option value="paharah">Pharah</option>
+          <option value="pharah">Pharah</option>
           <option value="reaper">Reaper</option>
           <option value="sojourn">Sojourn</option>
           <option value="soldier76">Soldier76</option>
@@ -93,24 +97,27 @@ const CardForm = (props) => {
           <option value="brigitte">Brigitte</option>
           <option value="kiriko">Kiriko</option>
           <option value="lucio">Lucio</option>
-          <option value="moira">Moira</option>
+          <option value="Moira">Moira</option>
           <option value="zenyatta">Zenyatta</option>
         </select>
+      </div>
+      <div>
         <label htmlFor="ranking-select">Ranking</label>
         <select
           name="ranking"
           id="ranking-select"
+          value={selectedRank}
           onChange={selectRankHandler}
-          className="text-black"
+          className="text-black block"
         >
           <option value="selector">{selectedRank}</option>
-          <option value="7">Grand Master</option>
-          <option value="6">Diamond</option>
-          <option value="5">Platinum</option>
-          <option value="4">Gold</option>
-          <option value="3">Silver</option>
-          <option value="2">Bronze</option>
-          <option value="1">Wood</option>
+          <option value="grandMaster">Grand Master</option>
+          <option value="master">Master</option>
+          <option value="diamond">Diamond</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
         </select>
       </div>
       <button
