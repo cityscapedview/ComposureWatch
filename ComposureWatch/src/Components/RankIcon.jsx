@@ -1,32 +1,40 @@
+import bronze from "../images/badge/bronze.webp";
+import silver from "../images/badge/silver.webp";
+import gold from "../images/badge/gold.webp";
+import platinum from "../images/badge/platinum.webp";
+import diamond from "../images/badge/diamond.webp";
+import master from "../images/badge/master.webp";
+import grandmaster from "../images/badge/grandmaster.webp";
+
 const RankIcon = (props) => {
   const rankList = [
     {
       id: "bronze",
-      img: "src/images/badge/bronze.webp",
+      img: bronze,
     },
     {
       id: "silver",
-      img: "src/images/badge/silver.webp",
+      img: silver,
     },
     {
       id: "gold",
-      img: "src/images/badge/gold.webp",
+      img: gold,
     },
     {
       id: "platinum",
-      img: "src/images/badge/platinum.webp",
+      img: platinum,
     },
     {
       id: "diamond",
-      img: "src/images/badge/diamond.webp",
+      img: diamond,
     },
     {
       id: "master",
-      img: "src/images/badge/master.webp",
+      img: master,
     },
     {
       id: "grandMaster",
-      img: "src/images/badge/grandmaster.webp",
+      img: grandmaster,
     },
   ];
 
