@@ -2,9 +2,9 @@ import HeaderListItem from "./HeaderListItem";
 
 const Header = () => {
   return (
-    <div className="relative mx-auto">
-      <div className="absolute top-4 mx-auto z-[6]">
-        <header className="mx-4 px-12 py-3 flex justify-start items-end space-x-6 border rounded-lg text-black bg-[rgba(229,235,244,0.95)] relative whitespace-nowrap">
+    <div className="relative">
+      <div className="absolute top-4 right-0 left-0 z-[6]">
+        <header className="mx-4 px-12 py-3 flex justify-start items-center space-x-6 border rounded-lg text-black bg-[rgba(229,235,244,0.95)] relative whitespace-nowrap">
           <div className="bg-white text-blue-400 hover:text-blue-300 cursor-pointer px-5 pt-4 h-full absolute left-0 top-0 font-bold text-xl uppercase tracking-tighter rounded-l-lg">
             Blissard
           </div>
