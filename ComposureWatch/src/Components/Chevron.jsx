@@ -6,7 +6,7 @@ const Chevron = () => {
       viewBox="0 0 24 24"
       strokeWidth="3px"
       stroke="currentColor"
-      className="w-3 h-3 stroke-[#9ca3af] align-items ml-0"
+      className="w-3 h-3 stroke-[#9ca3af] ml-0"
     >
       <path
         strokeLinejoin="round"
