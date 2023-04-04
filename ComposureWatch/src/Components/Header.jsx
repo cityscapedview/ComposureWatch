@@ -1,6 +1,7 @@
 import HeaderListItem from "./HeaderListItem";
 import HeaderListItemChevron from "./HeaderListItemChevron";
 import HeaderListItemUser from "./HeaderListItemUser";
+import Search from "./Search";
 import yinyang from "../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
 
 const Header = () => {
@@ -26,7 +27,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="items-center flex absolute h-full right-3 top-0">
-          <ul>
+          <Search />
+          <ul className="flex flex-row justify-start">
             <HeaderListItemUser info="Account" />
           </ul>
           <button className="bg-orange-600  px-3 py-2 ml-6 uppercase font-semibold rounded-md opacity-100 text-white hover:opacity-80 inline-block">
