@@ -1,4 +1,5 @@
 import HeaderListItem from "./HeaderListItem";
+import yinyang from "../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
           Blissard
         </div>
         <img
-          src="src/images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png"
+          src={yinyang}
           alt="yin-yang logo"
           className="pl-20 h-10 opacity-100 hover:opacity-80 cursor-pointer "
         />
