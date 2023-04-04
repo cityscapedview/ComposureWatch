@@ -1,148 +1,185 @@
+import dVa from "../images/portraits/dVa.png";
+import doomfist from "../images/portraits/doomfist.png";
+import junkerQueen from "../images/portraits/junkerQueen.png";
+import orisa from "../images/portraits/orisa.png";
+import ramattra from "../images/portraits/ramattra.png";
+import reinhardt from "../images/portraits/reinhardt.png";
+import roadHog from "../images/portraits/roadHog.png";
+import sigma from "../images/portraits/sigma.png";
+import winston from "../images/portraits/winston.png";
+import wreckingBall from "../images/portraits/wreckingBall.png";
+import zarya from "../images/portraits/zarya.png";
+import ashe from "../images/portraits/ashe.png";
+import bastion from "../images/portraits/bastion.png";
+import cassidy from "../images/portraits/cassidy.png";
+import echo from "../images/portraits/echo.png";
+import genji from "../images/portraits/genji.png";
+import hanzo from "../images/portraits/hanzo.png";
+import junkRat from "../images/portraits/junkrat.png";
+import mei from "../images/portraits/mei.png";
+import pharah from "../images/portraits/pharah.png";
+import reaper from "../images/portraits/reaper.png";
+import sojourn from "../images/portraits/sojourn.png";
+import soldier from "../images/portraits/soldier76.png";
+import sombra from "../images/portraits/sombra.png";
+import symmetra from "../images/portraits/symmetra.png";
+import torbjorn from "../images/portraits/torbjorn.png";
+import tracer from "../images/portraits/tracer.png";
+import widowmaker from "../images/portraits/widowmaker.png";
+import ana from "../images/portraits/ana.png";
+import baptiste from "../images/portraits/baptiste.png";
+import brigitte from "../images/portraits/brigitte.png";
+import kiriko from "../images/portraits/kiriko.png";
+import lucio from "../images/portraits/lucio.png";
+import mercy from "../images/portraits/mercy.png";
+import moira from "../images/portraits/moira.png";
+import zen from "../images/portraits/zen.png";
+
 const CharIcon = (props) => {
   const charList = [
     {
       id: "dVa",
-      img: "src/images/portraits/dVa.png",
+      img: dVa,
     },
     {
       id: "doomfist",
-      img: "src/images/portraits/doomfist.png",
+      img: doomfist,
     },
     {
       id: "junkerQueen",
-      img: "src/images/portraits/junkerQueen.png",
+      img: junkerQueen,
     },
     {
       id: "orisa",
-      img: "src/images/portraits/orisa.png",
+      img: orisa,
     },
     {
       id: "ramattra",
-      img: "src/images/portraits/ramattra.png",
+      img: ramattra,
     },
     {
       id: "reinhardt",
-      img: "src/images/portraits/reinhardt.png",
+      img: reinhardt,
     },
     {
       id: "roadhog",
-      img: "src/images/portraits/roadHog.png",
+      img: roadHog,
     },
     {
       id: "sigma",
-      img: "src/images/portraits/sigma.png",
+      img: sigma,
     },
     {
       id: "winston",
-      img: "src/images/portraits/winston.png",
+      img: winston,
     },
     {
       id: "wreckingBall",
-      img: "src/images/portraits/wreckingBall.png",
+      img: wreckingBall,
     },
     {
       id: "zarya",
-      img: "src/images/portraits/zarya.png",
+      img: zarya,
     },
     {
       id: "ashe",
-      img: "src/images/portraits/ashe.png",
+      img: ashe,
     },
     {
       id: "bastion",
-      img: "src/images/portraits/bastion.png",
+      img: bastion,
     },
     {
       id: "cassidy",
-      img: "src/images/portraits/cassidy.png",
+      img: cassidy,
     },
     {
       id: "echo",
-      img: "src/images/portraits/echo.png",
+      img: echo,
     },
     {
       id: "genji",
-      img: "src/images/portraits/genji.png",
+      img: genji,
     },
     {
       id: "hanzo",
-      img: "src/images/portraits/hanzo.png",
+      img: hanzo,
     },
     {
       id: "junkrat",
-      img: "src/images/portraits/junkrat.png",
+      img: junkRat,
     },
     {
       id: "mei",
-      img: "src/images/portraits/mei.png",
+      img: mei,
     },
     {
       id: "pharah",
-      img: "src/images/portraits/pharah.png",
+      img: pharah,
     },
     {
       id: "reaper",
-      img: "src/images/portraits/reaper.png",
+      img: reaper,
     },
     {
       id: "sojourn",
-      img: "src/images/portraits/sojourn.png",
+      img: sojourn,
     },
     {
       id: "soldier76",
-      img: "src/images/portraits/soldier76.png",
+      img: soldier,
     },
     {
       id: "sombra",
-      img: "src/images/portraits/sombra.png",
+      img: sombra,
     },
     {
       id: "symmetra",
-      img: "src/images/portraits/symmetra.png",
+      img: symmetra,
     },
     {
       id: "torbjorn",
-      img: "src/images/portraits/torbjorn.png",
+      img: torbjorn,
     },
     {
       id: "tracer",
-      img: "src/images/portraits/tracer.png",
+      img: tracer,
     },
     {
       id: "widowmaker",
-      img: "src/images/portraits/widowmaker.png",
+      img: widowmaker,
     },
     {
       id: "ana",
-      img: "src/images/portraits/ana.png",
+      img: ana,
     },
     {
       id: "baptiste",
-      img: "src/images/portraits/baptiste.png",
+      img: baptiste,
     },
     {
       id: "brigitte",
-      img: "src/images/portraits/brigitte.png",
+      img: brigitte,
     },
     {
       id: "kiriko",
-      img: "src/images/portraits/kiriko.png",
+      img: kiriko,
     },
     {
       id: "lucio",
-      img: "src/images/portraits/lucio.png",
+      img: lucio,
     },
     {
       id: "mercy",
-      img: "src/images/portraits/mercy.png",
+      img: mercy,
     },
     {
       id: "moira",
-      img: "src/images/portraits/moira.png",
+      img: moira,
     },
     {
-      id: "zen",
-      img: "src/images/portraits/zen.png",
+      id: "zenyatta",
+      img: zen,
     },
   ];
 
