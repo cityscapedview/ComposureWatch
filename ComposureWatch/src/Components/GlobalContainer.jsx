@@ -1,7 +1,7 @@
-const GlobalContainer = (props) => {
-  const classes = "" + props.className;
+const GlobalContainer = ({ children }) => {
+  const classes = "" + children.className;
 
-  return <div className={classes}>{props.children}</div>;
+  return <div className={classes}>{children}</div>;
 };
 
 export default GlobalContainer;
