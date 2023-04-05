@@ -5,6 +5,7 @@ import platinum from "../images/badge/platinum.webp";
 import diamond from "../images/badge/diamond.webp";
 import master from "../images/badge/master.webp";
 import grandmaster from "../images/badge/grandmaster.webp";
+import SearchImg from "./SearchImg";
 
 const RankIcon = ({ rank }) => {
   const rankList = [
@@ -38,11 +39,7 @@ const RankIcon = ({ rank }) => {
     },
   ];
 
-  let charRank;
-  let result = rankList.find((item) => item.id === rank);
-  if (result) {
-    charRank = result.img;
-  }
+  let charRank = SearchImg(rank, rankList);
 
   return <img src={charRank} alt="character rank" className="" />;
 };
