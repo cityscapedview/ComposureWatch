@@ -1,4 +1,4 @@
-import Chevron from "./Chevron";
+import Chevron from "../Chevron";
 
 const HeaderListItemChevron = (props) => {
   return (

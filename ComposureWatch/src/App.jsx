@@ -1,6 +1,6 @@
 import Body from "./Components/Body";
 import GlobalContainer from "./Components/GlobalContainer";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import TitleSection from "./Components/TitleSection";
 import PurposeSection from "./Components/PurposeSection";
 import CardOverview from "./Components/CardOverview";

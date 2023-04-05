@@ -1,5 +1,5 @@
-import User from "./User";
-import Chevron from "./Chevron";
+import User from "../User";
+import Chevron from "../Chevron";
 
 const HeaderListItemUser = (props) => {
   return (

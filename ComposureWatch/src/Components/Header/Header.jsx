@@ -1,8 +1,8 @@
 import HeaderListItem from "./HeaderListItem";
 import HeaderListItemChevron from "./HeaderListItemChevron";
 import HeaderListItemUser from "./HeaderListItemUser";
-import SearchSvg from "./SearchSvg";
-import yinyang from "../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
+import SearchSvg from "../SearchSvg";
+import yinyang from "../../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
 
 const Header = () => {
   return (
