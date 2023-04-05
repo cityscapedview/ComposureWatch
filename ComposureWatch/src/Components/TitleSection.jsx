@@ -3,10 +3,7 @@ import backVideo from "../video/zenHighlight.mp4";
 const TitleSection = () => {
   return (
     <div className="h-[90vh] min-h-[600px] max-h-[1000px] flex flex-col justify-center items-center relative">
-      <div
-        id="video-container"
-        className="align-middle w-full h-full absolute top-0 z-[-1]"
-      >
+      <div className="video-container align-middle w-full h-full absolute top-0 z-[-1]">
         <video autoPlay loop muted className="object-cover w-full h-full">
           <source src={backVideo} type="video/mp4" />
         </video>
