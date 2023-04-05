@@ -1,7 +1,7 @@
 import HeaderListItem from "./HeaderListItem";
 import HeaderListItemChevron from "./HeaderListItemChevron";
 import HeaderListItemUser from "./HeaderListItemUser";
-import Search from "./Search";
+import SearchSvg from "./SearchSvg";
 import yinyang from "../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="items-center flex absolute h-full right-3 top-0">
-          <Search />
+          <SearchSvg />
           <ul className="flex flex-row justify-start">
             <HeaderListItemUser info="Account" />
           </ul>
