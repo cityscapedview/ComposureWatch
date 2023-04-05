@@ -34,6 +34,7 @@ import lucio from "../images/portraits/lucio.png";
 import mercy from "../images/portraits/mercy.png";
 import moira from "../images/portraits/moira.png";
 import zen from "../images/portraits/zen.png";
+import SearchImg from "./SearchImg";
 
 const CharIcon = ({ character }) => {
   const charList = [
@@ -183,12 +184,7 @@ const CharIcon = ({ character }) => {
     },
   ];
 
-  const imgSearch = (character, charList) => {
-    let result = charList.find((item) => item.id === character);
-    return result.img;
-  };
-
-  let charImg = imgSearch(character, charList);
+  let charImg = SearchImg(character, charList);
 
   return (
     <img
