@@ -35,7 +35,7 @@ import mercy from "../images/portraits/mercy.png";
 import moira from "../images/portraits/moira.png";
 import zen from "../images/portraits/zen.png";
 
-const CharIcon = (props) => {
+const CharIcon = ({ character }) => {
   const charList = [
     {
       id: "dVa",
@@ -184,11 +184,10 @@ const CharIcon = (props) => {
   ];
 
   let charImg;
-  let result = charList.find((item) => item.id === props.character);
+  let result = charList.find((item) => item.id === character);
   if (result) {
     charImg = result.img;
   }
-  console.log({ charImg, result, char: props.character });
 
   return (
     <img
