@@ -183,11 +183,12 @@ const CharIcon = ({ character }) => {
     },
   ];
 
-  let charImg;
-  let result = charList.find((item) => item.id === character);
-  if (result) {
-    charImg = result.img;
-  }
+  const imgSearch = (character, charList) => {
+    let result = charList.find((item) => item.id === character);
+    return result.img;
+  };
+
+  let charImg = imgSearch(character, charList);
 
   return (
     <img
