@@ -1,9 +1,8 @@
-const Body = (props) => {
+const Body = ({ children }) => {
   const classes =
-    "w-screen h-screen text-[#1d253a]p-0 m-0 box-border block" +
-    props.className;
+    "text-[#1d253a] p-0 m-0 box-border block " + children.className;
 
-  return <div className={classes}>{props.children}</div>;
+  return <div className={classes}>{children}</div>;
 };
 
 export default Body;

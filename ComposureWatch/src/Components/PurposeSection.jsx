@@ -1,3 +1,5 @@
+import kiriko from "../images/Kiriko.jpg";
+
 const PurposeSection = () => {
   return (
     <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex justify-center">
@@ -8,15 +10,11 @@ const PurposeSection = () => {
             ComposureWatch is a free-to-use, team-based tool made to ensure
             balance amongst team creation in internal games. Nothing should get
             in the way of a good gaming session, especially when playing with
-            friends.{" "}
+            friends.
           </p>
         </div>
         <div>
-          <img
-            src="src/images/Kiriko.jpg"
-            alt="Kiriko Image"
-            className="rounded"
-          />
+          <img src={kiriko} alt="Kiriko Image" className="rounded" />
         </div>
       </div>
     </div>

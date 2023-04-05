@@ -1,13 +1,11 @@
+import doomfist from "../images/Doomfist.png";
+
 const CardOverview = () => {
   return (
     <div className="bg-gradient-to-tr from-[#AE1518] via-[#8C1114] to-[#5B0B0E] flex justify-center">
       <div className="flex flex-row justify-center items-start  text-white py-14 px-12 gap-x-12 max-w-7xl">
         <div>
-          <img
-            src="src/images/Doomfist.png"
-            alt="Doomfist"
-            className="rounded"
-          />
+          <img src={doomfist} alt="Doomfist" className="rounded" />
         </div>
         <div className="flex flex-col items-center">
           <h2 className="text-6xl font-bold uppercase mb-6">Card Overview</h2>

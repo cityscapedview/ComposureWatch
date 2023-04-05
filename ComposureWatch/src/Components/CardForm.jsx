@@ -97,7 +97,8 @@ const CardForm = (props) => {
           <option value="brigitte">Brigitte</option>
           <option value="kiriko">Kiriko</option>
           <option value="lucio">Lucio</option>
-          <option value="Moira">Moira</option>
+          <option value="mercy">Mercy</option>
+          <option value="moira">Moira</option>
           <option value="zenyatta">Zenyatta</option>
         </select>
       </div>
