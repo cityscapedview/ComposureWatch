@@ -6,7 +6,7 @@ import diamond from "../images/badge/diamond.webp";
 import master from "../images/badge/master.webp";
 import grandmaster from "../images/badge/grandmaster.webp";
 
-const RankIcon = (props) => {
+const RankIcon = ({ rank }) => {
   const rankList = [
     {
       id: "bronze",
@@ -39,9 +39,9 @@ const RankIcon = (props) => {
   ];
 
   let charRank;
-  let rank = rankList.find((item) => item.id === props.rank);
-  if (rank) {
-    charRank = rank.img;
+  let result = rankList.find((item) => item.id === rank);
+  if (result) {
+    charRank = result.img;
   }
 
   return <img src={charRank} alt="character rank" className="" />;
