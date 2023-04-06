@@ -3,8 +3,8 @@ import GlobalContainer from "./Components/GlobalContainer";
 import Header from "./Components/Header/Header";
 import TitleSection from "./Components/TitleSection";
 import PurposeSection from "./Components/PurposeSection";
-import CardOverview from "./Components/CardOverview";
-import CreateCard from "./Components/CreateCard";
+import CardOverview from "./Components/Card/CardOverview";
+import CreateCard from "./Components/Card/CreateCard";
 
 function App() {
   return (
