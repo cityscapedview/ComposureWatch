@@ -31,9 +31,11 @@ const Header = () => {
           <ul className="flex flex-row justify-start">
             <HeaderListItemUser info="Account" />
           </ul>
-          <button className="bg-orange-600  px-3 py-2 ml-6 uppercase font-semibold rounded-md opacity-100 text-white hover:opacity-80 inline-block">
-            Try now
-          </button>
+          <div className="hidden lg:block">
+            <button className="bg-orange-600  px-3 py-2 ml-6 uppercase font-semibold rounded-md opacity-100 text-white hover:opacity-80 inline-block">
+              Try now
+            </button>
+          </div>
         </div>
       </header>
     </div>
