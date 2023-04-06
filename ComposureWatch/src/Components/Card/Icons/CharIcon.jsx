@@ -34,7 +34,7 @@ import lucio from "../../../images/portraits/lucio.png";
 import mercy from "../../../images/portraits/mercy.png";
 import moira from "../../../images/portraits/moira.png";
 import zen from "../../../images/portraits/zen.png";
-import SearchImg from "../../SearchImg";
+import SearchImg from "./SearchImg";
 
 const CharIcon = ({ character }) => {
   const charList = [

@@ -5,7 +5,7 @@ import platinum from "../../../images/badge/platinum.webp";
 import diamond from "../../../images/badge/diamond.webp";
 import master from "../../../images/badge/master.webp";
 import grandmaster from "../../../images/badge/grandmaster.webp";
-import SearchImg from "../../SearchImg";
+import SearchImg from "./SearchImg";
 
 const RankIcon = ({ rank }) => {
   const rankList = [
