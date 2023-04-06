@@ -1,4 +1,4 @@
-import doomfist from "../../images/Doomfist.png";
+import doomfist from "../../images/UI/Doomfist.png";
 
 const CardOverview = () => {
   return (
