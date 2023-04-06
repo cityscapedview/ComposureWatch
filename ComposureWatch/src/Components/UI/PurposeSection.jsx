@@ -1,4 +1,4 @@
-import kiriko from "../images/UI/Kiriko.jpg";
+import kiriko from "../../images/UI/Kiriko.jpg";
 
 const PurposeSection = () => {
   return (
