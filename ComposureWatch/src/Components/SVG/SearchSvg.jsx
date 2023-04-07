@@ -1,7 +1,7 @@
 const SearchSvg = () => {
   return (
     <li className="flex flex-row items-center pr-8">
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
