@@ -26,14 +26,16 @@ const Header = () => {
             <HeaderListItemChevron info="Game Info" />
             <HeaderListItem info="Heroes" />
             <HeaderListItem info="Season 3" />
-            <HeaderListItem info="News" />
-            <div className="hidden 2xl:block">
+            <div className="hidden min-[975px]:block">
+              <HeaderListItem info="News" />
+            </div>
+            <div className="hidden min-[1110px]:block">
               <HeaderListItemChevron info="Community" />
             </div>
-            <div className="hidden xl:block">
+            <div className="hidden min-[1180px]:block">
               <HeaderListItemChevron info="Shop" />
             </div>
-            <div className="hidden lg:block xl:block 2xl:hidden pl-2 h-full">
+            <div className="hidden min-[960px]:block min-[1180px]:hidden pl-2 h-full">
               <EllipsesSvg />
             </div>
           </ul>
