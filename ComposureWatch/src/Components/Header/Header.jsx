@@ -4,6 +4,7 @@ import HeaderListItemUser from "./HeaderListItemUser";
 import SearchSvg from "../SVG/SearchSvg";
 import yinyang from "../../images/icons/kisspng-yin-and-yang-symbol-clip-art-ying-yang-5ac89db48a7b91.1364399115230970125672.png";
 import HamburgerSvg from "../SVG/HamburgerSvg";
+import EllipsesSvg from "../SVG/EllipsesSvg";
 
 const Header = () => {
   return (
@@ -26,8 +27,15 @@ const Header = () => {
             <HeaderListItem info="Heroes" />
             <HeaderListItem info="Season 3" />
             <HeaderListItem info="News" />
-            <HeaderListItemChevron info="Community" />
-            <HeaderListItemChevron info="Shop" />
+            <div className="hidden lg:block">
+              <HeaderListItemChevron info="Community" />
+            </div>
+            <div className="hidden xl:block">
+              <HeaderListItemChevron info="Shop" />
+            </div>
+            <div className="hidden">
+              <EllipsesSvg />
+            </div>
           </ul>
         </div>
         <div className="items-center flex absolute h-full right-3 top-0">
