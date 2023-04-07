@@ -6,7 +6,7 @@ const UserSvg = () => {
       viewBox="0 0 24 24"
       strokeWidth="2px"
       stroke="currentColor"
-      className="w-6 h-6 stroke-[#6b7280]"
+      className="w-6 h-6 stroke-[#000] lg:stroke-[#6b7280]"
     >
       <path
         strokeLinecap="round"
