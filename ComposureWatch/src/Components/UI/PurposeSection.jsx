@@ -5,7 +5,7 @@ const PurposeSection = () => {
     <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex items-center justify-center">
       <div
         className="grid grid-cols-1 md:grid-cols-[40fr,60fr] 
-      gap-x-20 gap-y-20 px-4 py-10 sm:px-6 sm:py-16 lg:px-40px lg:py-80px
+      gap-x-20 gap-y-20 px-4 py-10 sm:px-6 sm:py-16 md:px-10 md:py-20
       justify-center items-start  font-[rgb(29, 37, 58)] max-w-7xl"
       >
         <div className="flex flex-col items-center">
@@ -15,9 +15,6 @@ const PurposeSection = () => {
             balance amongst team creation in internal games. Nothing should get
             in the way of a good gaming session, especially when playing with
             friends. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quo blanditiis ducimus aperiam voluptates dolor laboriosam accusamus
-            dolorum. Voluptatem qui iste quasi amet magnam, facilis vitae
-            officia modi accusamus temporibus iusto.
           </p>
         </div>
         <div>
