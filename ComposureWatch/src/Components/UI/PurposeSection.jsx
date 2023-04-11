@@ -2,11 +2,11 @@ import kiriko from "../../images/UI/Kiriko.jpg";
 
 const PurposeSection = () => {
   return (
-    <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex justify-center">
+    <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex items-center justify-center">
       <div
         className="grid grid-cols-1 md:grid-cols-[40fr,60fr] 
-      gap-x-20 gap-y-20
-      justify-center items-start  font-[rgb(29, 37, 58)] py-14 px-12 max-w-7xl"
+      gap-x-20 gap-y-20 px-4 py-10 sm:px-6 sm:py-16 lg:px-40px lg:py-80px
+      justify-center items-start  font-[rgb(29, 37, 58)] max-w-7xl"
       >
         <div className="flex flex-col items-center">
           <h2 className="text-6xl font-bold uppercase">A NEW ERA HAS BEGUN</h2>
