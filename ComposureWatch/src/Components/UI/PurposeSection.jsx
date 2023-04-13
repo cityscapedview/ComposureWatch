@@ -1,11 +1,12 @@
 import kiriko from "../../images/UI/Kiriko.jpg";
+import Zcontentgrid from "./ZGridComponent/Zcontentgrid";
 import Zgrid from "./ZGridComponent/Zgrid";
 
 const PurposeSection = () => {
   return (
     <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex items-center justify-center">
       <Zgrid>
-        <div className="grid grid-cols-1 justify-items-center content-center text-center max-w-[650px]  md:text-left">
+        <Zcontentgrid>
           <h2 className="text-4xl sm:text-6xl font-bold uppercase">
             A NEW ERA HAS BEGUN
           </h2>
@@ -15,7 +16,7 @@ const PurposeSection = () => {
             in the way of a good gaming session, especially when playing with
             friends. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           </p>
-        </div>
+        </Zcontentgrid>
         <div className="self-start">
           <img src={kiriko} alt="Kiriko Image" className="rounded" />
         </div>
