@@ -17,11 +17,11 @@ const Overview = () => {
         <Zcontentgrid>
           <Zheader header={header} />
           <Zcontent content={content} />
-          <div className="flex align-center justify-center gap-x-6 pt-8">
-            <button className="bg-orange-600 w-30 h-15 px-10 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100">
+          <div className="flex align-center justify-center md:gap-x-6 pt-8 flex-col md:flex-row gap-y-6">
+            <button className="bg-orange-600 w-30 h-15 px-10 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100 whitespace-nowrap">
               Try now
             </button>
-            <button className="bg-white text-black w-30 h-15 px-10 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100">
+            <button className="bg-white text-black w-30 h-15 px-10 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100 whitespace-nowrap">
               Learn More
             </button>
           </div>
