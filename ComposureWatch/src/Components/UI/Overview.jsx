@@ -1,6 +1,6 @@
 import doomfist from "../../images/UI/Doomfist.png";
 import Zcontentgrid from "./ZGridComponent/Zcontentgrid";
-import Zgrid from "./ZGridComponent/Zgrid";
+import Zgridright from "./ZGridComponent/Zgridright";
 import Zheader from "./ZGridComponent/Zheader";
 import Zcontent from "./ZGridComponent/Zcontent";
 import Zimage from "./ZGridComponent/Zimage";
@@ -12,7 +12,7 @@ const Overview = () => {
   let alt = "Doomfist Image";
   return (
     <div className="bg-gradient-to-tr from-[#AE1518] via-[#8C1114] to-[#5B0B0E] flex justify-center">
-      <Zgrid>
+      <Zgridright>
         <Zimage img={doomfist} alt={alt} />
         <Zcontentgrid>
           <Zheader header={header} />
@@ -24,7 +24,7 @@ const Overview = () => {
             Learn More
           </button>
         </Zcontentgrid>
-      </Zgrid>
+      </Zgridright>
     </div>
   );
 };

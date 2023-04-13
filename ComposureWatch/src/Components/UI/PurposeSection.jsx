@@ -1,6 +1,6 @@
 import kiriko from "../../images/UI/Kiriko.jpg";
 import Zcontentgrid from "./ZGridComponent/Zcontentgrid";
-import Zgrid from "./ZGridComponent/Zgrid";
+import Zgridleft from "./ZGridComponent/Zgridleft";
 import Zheader from "./ZGridComponent/Zheader";
 import Zcontent from "./ZGridComponent/Zcontent";
 import Zimage from "./ZGridComponent/Zimage";
@@ -13,13 +13,13 @@ const PurposeSection = () => {
 
   return (
     <div className="from-[#66c4ff] bg-gradient-to-tr via-[#33b1ff]to-[#009dff] flex items-center justify-center">
-      <Zgrid>
+      <Zgridleft>
         <Zcontentgrid>
           <Zheader header={header} />
           <Zcontent content={content} />
         </Zcontentgrid>
         <Zimage img={kiriko} alt={alt} />
-      </Zgrid>
+      </Zgridleft>
     </div>
   );
 };
