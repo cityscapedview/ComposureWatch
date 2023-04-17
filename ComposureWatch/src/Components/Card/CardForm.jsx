@@ -10,17 +10,14 @@ const CardForm = (props) => {
 
   const nameChangeHandler = (event) => {
     setEnteredName(event.target.value);
-    console.log(selectedRank);
   };
 
   const selectCharacterHandler = (event) => {
     setSelectedCharacter(event.target.value);
-    console.log(selectedCharacter);
   };
 
   const selectRankHandler = (event) => {
     setSelectedRank(event.target.value);
-    console.log(selectedRank);
   };
 
   const submitHandler = (event) => {
@@ -31,8 +28,6 @@ const CardForm = (props) => {
       character: selectedCharacter,
       rank: selectedRank,
     };
-
-    console.log(charData);
 
     props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
