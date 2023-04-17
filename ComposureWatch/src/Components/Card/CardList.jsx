@@ -14,6 +14,7 @@ const CardList = (props) => {
           name={card.name}
           character={card.character}
           rank={card.rank}
+          id={card.id}
         />
       ))}
     </ul>
