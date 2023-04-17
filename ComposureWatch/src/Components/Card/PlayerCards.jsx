@@ -1,7 +1,7 @@
 import RankIcon from "./Icons/RankIcon";
 import CharIcon from "./Icons/CharIcon";
 
-const PlayerCards = ({ name, character, rank, id }) => {
+const PlayerCards = ({ id, name, character, rank }) => {
   return (
     <li key={id} className="p-8">
       <div className="border-4 border-[#2EF3FF]  rounded-xl shadow-2xl shadow-[#13336C] bg-[#0A0D30]">

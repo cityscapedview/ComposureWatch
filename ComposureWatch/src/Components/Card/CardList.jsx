@@ -11,10 +11,10 @@ const CardList = (props) => {
     <ul>
       {props.info.map((card) => (
         <PlayerCards
+          id={card.id}
           name={card.name}
           character={card.character}
           rank={card.rank}
-          id={card.id}
         />
       ))}
     </ul>

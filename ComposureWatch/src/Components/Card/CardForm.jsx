@@ -30,10 +30,10 @@ const CardForm = (props) => {
     event.preventDefault();
 
     const charData = {
+      id: count,
       name: enteredName,
       character: selectedCharacter,
       rank: selectedRank,
-      id: count,
     };
     console.log(charData);
     props.onSaveCharData(charData);
