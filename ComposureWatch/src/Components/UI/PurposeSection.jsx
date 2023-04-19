@@ -17,8 +17,7 @@ const PurposeSection = () => {
               ComposureWatch is a free-to-use, team-based tool made to ensure
               balance amongst team creation in internal games. Nothing should
               get in the way of a good gaming session, especially when playing
-              with friends. Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit.
+              with friends. 
             </p>
           </div>
         </div>
