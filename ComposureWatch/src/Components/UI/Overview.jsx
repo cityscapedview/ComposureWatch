@@ -1,6 +1,6 @@
-import doomfist from "../images/Doomfist.png";
+import doomfist from "../../images/UI/Doomfist.png";
 
-const CardOverview = () => {
+const Overview = () => {
   return (
     <div className="bg-gradient-to-tr from-[#AE1518] via-[#8C1114] to-[#5B0B0E] flex justify-center">
       <div className="flex flex-row justify-center items-start  text-white py-14 px-12 gap-x-12 max-w-7xl">
@@ -30,4 +30,4 @@ const CardOverview = () => {
   );
 };
 
-export default CardOverview;
+export default Overview;

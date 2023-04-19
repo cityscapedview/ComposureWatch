@@ -1,5 +1,5 @@
-import RankIcon from "./RankIcon";
-import CharIcon from "./CharIcon";
+import RankIcon from "./Icons/RankIcon";
+import CharIcon from "./Icons/CharIcon";
 
 const PlayerCards = ({ name, character, rank }) => {
   return (

@@ -1,4 +1,4 @@
-const Search = () => {
+const SearchSvg = () => {
   return (
     <li className="flex flex-row items-center pr-8">
       <svg
@@ -19,4 +19,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchSvg;

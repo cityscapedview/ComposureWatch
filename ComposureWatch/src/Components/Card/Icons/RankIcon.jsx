@@ -1,10 +1,10 @@
-import bronze from "../images/badge/bronze.webp";
-import silver from "../images/badge/silver.webp";
-import gold from "../images/badge/gold.webp";
-import platinum from "../images/badge/platinum.webp";
-import diamond from "../images/badge/diamond.webp";
-import master from "../images/badge/master.webp";
-import grandmaster from "../images/badge/grandmaster.webp";
+import bronze from "../../../images/badge/bronze.webp";
+import silver from "../../../images/badge/silver.webp";
+import gold from "../../../images/badge/gold.webp";
+import platinum from "../../../images/badge/platinum.webp";
+import diamond from "../../../images/badge/diamond.webp";
+import master from "../../../images/badge/master.webp";
+import grandmaster from "../../../images/badge/grandmaster.webp";
 import SearchImg from "./SearchImg";
 
 const RankIcon = ({ rank }) => {
