@@ -110,6 +110,11 @@ const SortingLogic = () => {
     },
   ];
 
+
+// Filtering for rating
+
+const filtRating = cards.filter
+
 let team1 = [];
 let team2 = [];
 let team1Val = 0;
