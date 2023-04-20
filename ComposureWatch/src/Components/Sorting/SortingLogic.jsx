@@ -126,8 +126,10 @@ const SortingLogic = () => {
   // Most Basic Test logic for testing purposes
   for (let player of cards) {
     if (team2Val + player.rating >= team1Val) {
+      team1Val += player.rating;
       team1.push(player);
     } else {
+      team2Val += player.rating;
       team2.push(player);
     }
   }
