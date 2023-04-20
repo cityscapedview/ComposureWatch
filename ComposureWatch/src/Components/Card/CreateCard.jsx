@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardForm from "./CardForm";
-import PlayerCards from "./PlayerCards";
 import CardList from "./CardList";
+import SortingLogic from "../Sorting/SortingLogic";
 
 const DUMMY_CARDS = [
   {
@@ -38,6 +38,7 @@ const CreateCard = () => {
         >
           Kumite!
         </button>
+        <SortingLogic />
       </div>
     </div>
   );
