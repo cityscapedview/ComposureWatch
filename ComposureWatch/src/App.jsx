@@ -1,10 +1,10 @@
-import Body from "./Components/Body";
-import GlobalContainer from "./Components/GlobalContainer";
-import Header from "./Components/Header";
-import TitleSection from "./Components/TitleSection";
-import PurposeSection from "./Components/PurposeSection";
-import CardOverview from "./Components/CardOverview";
-import CreateCard from "./Components/CreateCard";
+import Body from "./Components/UI/Body";
+import GlobalContainer from "./Components/UI/GlobalContainer";
+import Header from "./Components/Header/Header";
+import TitleSection from "./Components/UI/TitleSection";
+import PurposeSection from "./Components/UI/PurposeSection";
+import Overview from "./Components/UI/Overview";
+import CreateCard from "./Components/Card/CreateCard";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Header />
           <TitleSection />
           <PurposeSection />
-          <CardOverview />
+          <Overview />
           <CreateCard />
         </GlobalContainer>
       </Body>

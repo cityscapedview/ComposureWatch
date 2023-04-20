@@ -8,32 +8,34 @@ const CardForm = (props) => {
 
   const [selectedRank, setSelectedRank] = useState("Select Rank");
 
+  const [count, setCount] = useState(0);
+
   const nameChangeHandler = (event) => {
     setEnteredName(event.target.value);
-    console.log(selectedRank);
   };
 
   const selectCharacterHandler = (event) => {
     setSelectedCharacter(event.target.value);
-    console.log(selectedCharacter);
   };
 
   const selectRankHandler = (event) => {
     setSelectedRank(event.target.value);
-    console.log(selectedRank);
+  };
+
+  const handleClick = () => {
+    setCount(count + 1);
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
 
     const charData = {
+      id: count,
       name: enteredName,
       character: selectedCharacter,
       rank: selectedRank,
     };
-
     console.log(charData);
-
     props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
     setSelectedCharacter("Select Character");
@@ -123,6 +125,7 @@ const CardForm = (props) => {
       </div>
       <button
         type="submit"
+        onClick={handleClick}
         className="bg-orange-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:opacity-100"
       >
         Create New Player

@@ -1,4 +1,4 @@
-import backVideo from "../video/zenHighlight.mp4";
+import backVideo from "../../video/zenHighlight.mp4";
 
 const TitleSection = () => {
   return (
