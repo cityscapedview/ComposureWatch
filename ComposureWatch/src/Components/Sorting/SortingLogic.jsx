@@ -1,5 +1,7 @@
+// To be determine if ranks will be part of the rank icon list or housed seperately here for values
+import CardList from "../Card/CardList";
+
 const SortingLogic = () => {
-  // To be determine if ranks will be part of the rank icon list or housed seperately here for values
   let ranks = {
     bronze5: 0.5,
     bronze4: 0.55,
@@ -44,70 +46,70 @@ const SortingLogic = () => {
       id: 1,
       name: "Lightster",
       character: "reaper",
-      rank: "gold5",
+      rank: "gold",
       rating: 1,
     },
     {
       id: 2,
       name: "Mia",
-      character: "Hanzo",
-      rank: "gold4",
+      character: "hanzo",
+      rank: "gold",
       rating: 1.05,
     },
     {
       id: 3,
       name: "Ollie",
-      character: "LifeWeaver",
-      rank: "diamond3",
+      character: "junkrat",
+      rank: "diamond",
       rating: 1.6,
     },
     {
       id: 4,
       name: "Zulu",
       character: "ana",
-      rank: "diamond2",
+      rank: "diamond",
       rating: 1.65,
     },
     {
       id: 5,
       name: "Raihn",
       character: "reinhardt",
-      rank: "silver2",
+      rank: "silver",
       rating: 0.9,
     },
     {
       id: 6,
       name: "Ivysaur",
-      character: "widow",
-      rank: "platinum5",
+      character: "widowmaker",
+      rank: "platinum",
       rating: 1.25,
     },
     {
       id: 7,
       name: "netbattler",
       character: "ana",
-      rank: "gold4",
+      rank: "gold",
       rating: 1.05,
     },
     {
       id: 8,
       name: "Zen",
       character: "moira",
-      rank: "platinum3",
+      rank: "platinum",
       rating: 1.35,
     },
     {
       id: 9,
       name: "twenty7",
       character: "pharah",
-      rank: "silver1",
+      rank: "silver",
       rating: 0.95,
     },
     {
       id: 10,
       name: "Gizmo",
       character: "kiriko",
-      rank: "platinum1",
+      rank: "platinum",
       rating: 1.45,
     },
   ];
@@ -116,17 +118,26 @@ const SortingLogic = () => {
 
   // Filtering for rating
 
-  const filtRating = cards.filter;
-
   let team1 = [];
   let team2 = [];
   let team1Val = 0;
   let team2Val = 0;
 
-  if (rating + team2Val > team1Val_) {
-    return (team1Val += rating);
+  // Most Basic Test logic for testing purposes
+  for (let player of cards) {
+    if (team2Val + player.rating >= team1Val) {
+      team1.push(player);
+    } else {
+      team2.push(player);
+    }
   }
 
-  return <div>SortingLogic</div>;
+  return (
+    <div>
+      <CardList info={team1} />
+      <p>VS</p>
+      <CardList info={team2} />
+    </div>
+  );
 };
 export default SortingLogic;
