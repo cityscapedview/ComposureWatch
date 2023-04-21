@@ -112,6 +112,20 @@ const SortingLogic = () => {
       rank: "platinum",
       rating: 1.45,
     },
+    {
+      id: 11,
+      name: "Zen",
+      character: "moira",
+      rank: "platinum",
+      rating: 2.35,
+    },
+    {
+      id: 12,
+      name: "twenty7",
+      character: "pharah",
+      rank: "silver",
+      rating: 1.95,
+    },
   ];
 
   // Logic instructions:
@@ -139,6 +153,17 @@ const SortingLogic = () => {
 
   let teamOneLength = teamOne.length;
   let teamTwoLength = teamTwo.length;
+
+  // Maxes out the amount of players on one team
+  // refactor below into a function for DRY
+
+  if (teamOne.length > 6) {
+    let popPlayerOne = teamOne.pop();
+    teamTwo.push(popPlayerOne);
+  } else if (teamTwo.length > 6) {
+    let popPlayerTwo = teamOne.pop();
+    teamOne.push(popPlayerTwo);
+  }
 
   return (
     <div>
