@@ -134,10 +134,23 @@ const SortingLogic = () => {
     }
   }
 
+  let teamOneLength = team1.length;
+  let teamTwoLength = team2.length;
+
   return (
     <div>
       <CardList info={team1} />
-      <p>VS</p>
+      <div className="flex flex-col justify-center items-center">
+        <div className="text-red-600  text-4xl">
+          <p>Team One Value: {team1Val}</p>
+          <p>Players: {teamOneLength}</p>
+        </div>
+        <div className="text-white font-bold italic text-8xl py-8">VS</div>
+        <div className="text-blue-600  text-4xl">
+          <p>Team Two Value: {team2Val}</p>
+          <p>Players: {teamTwoLength}</p>
+        </div>
+      </div>
       <CardList info={team2} />
     </div>
   );
