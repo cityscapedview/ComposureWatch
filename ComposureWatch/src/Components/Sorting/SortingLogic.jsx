@@ -115,43 +115,46 @@ const SortingLogic = () => {
   ];
 
   // Logic instructions:
+  // Randomize ids for new teams with same players on "kumite" button press.
+  // Sort players by rating into two objects
+  // Each Team cannot exceed six players
+  // If there is a potential for closer team ratings, having an equal number of players on each team is not a priority.
+  // Good luck  -Zen
 
-  // Filtering for rating
-
-  let team1 = [];
-  let team2 = [];
-  let team1Val = 0;
-  let team2Val = 0;
+  let teamOne = [];
+  let teamTwo = [];
+  let teamOneVal = 0;
+  let teamTwoVal = 0;
 
   // Most Basic Test logic for testing purposes
   for (let player of cards) {
-    if (team2Val + player.rating >= team1Val) {
-      team1Val += player.rating;
-      team1.push(player);
+    if (teamTwoVal + player.rating >= teamOneVal) {
+      teamOneVal += player.rating;
+      teamOne.push(player);
     } else {
-      team2Val += player.rating;
-      team2.push(player);
+      teamTwoVal += player.rating;
+      teamTwo.push(player);
     }
   }
 
-  let teamOneLength = team1.length;
-  let teamTwoLength = team2.length;
+  let teamOneLength = teamOne.length;
+  let teamTwoLength = teamTwo.length;
 
   return (
     <div>
-      <CardList info={team1} />
+      <CardList info={teamOne} />
       <div className="flex flex-col justify-center items-center">
         <div className="text-red-600  text-4xl">
-          <p>Team One Value: {team1Val}</p>
+          <p>Team One Value: {teamOneVal}</p>
           <p>Players: {teamOneLength}</p>
         </div>
         <div className="text-white font-bold italic text-8xl py-8">VS</div>
         <div className="text-blue-600  text-4xl">
-          <p>Team Two Value: {team2Val}</p>
+          <p>Team Two Value: {teamTwoVal}</p>
           <p>Players: {teamTwoLength}</p>
         </div>
       </div>
-      <CardList info={team2} />
+      <CardList info={teamTwo} />
     </div>
   );
 };
