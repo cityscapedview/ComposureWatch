@@ -151,19 +151,23 @@ const SortingLogic = () => {
     }
   }
 
-  let teamOneLength = teamOne.length;
-  let teamTwoLength = teamTwo.length;
-
   // Maxes out the amount of players on one team
   // refactor below into a function for DRY
 
   if (teamOne.length > 6) {
     let popPlayerOne = teamOne.pop();
+    teamOneVal -= popPlayerOne.rating;
+    teamTwoVal += popPlayerOne.rating;
     teamTwo.push(popPlayerOne);
   } else if (teamTwo.length > 6) {
     let popPlayerTwo = teamOne.pop();
+    teamTwoVal -= popPlayerTwo.rating;
+    teamOneVal += popPlayerTwo.rating;
     teamOne.push(popPlayerTwo);
   }
+
+  let teamOneLength = teamOne.length;
+  let teamTwoLength = teamTwo.length;
 
   return (
     <div>
