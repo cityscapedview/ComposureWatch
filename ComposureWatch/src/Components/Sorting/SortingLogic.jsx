@@ -107,24 +107,10 @@ const SortingLogic = () => {
     },
     {
       id: 10,
-      name: "Gizmo",
-      character: "kiriko",
+      name: "flockwood",
+      character: "zenyatta",
       rank: "platinum",
-      rating: 1.45,
-    },
-    {
-      id: 11,
-      name: "Zen",
-      character: "moira",
-      rank: "platinum",
-      rating: 2.35,
-    },
-    {
-      id: 12,
-      name: "twenty7",
-      character: "pharah",
-      rank: "silver",
-      rating: 1.95,
+      rating: 1.35,
     },
   ];
 
@@ -164,6 +150,15 @@ const SortingLogic = () => {
     teamTwoVal -= popPlayerTwo.rating;
     teamOneVal += popPlayerTwo.rating;
     teamOne.push(popPlayerTwo);
+  } else if (teamTwo.length - teamOne.length >= 2) {
+    teamTwoVal -= popPlayerTwo.rating;
+    teamOneVal += popPlayerTwo.rating;
+    teamOne.push(popPlayerTwo);
+  } else if (teamOne.length - teamTwo.length >= 2) {
+    let popPlayerOne = teamOne.pop();
+    teamOneVal -= popPlayerOne.rating;
+    teamTwoVal += popPlayerOne.rating;
+    teamTwo.push(popPlayerOne);
   }
 
   let teamOneLength = teamOne.length;
