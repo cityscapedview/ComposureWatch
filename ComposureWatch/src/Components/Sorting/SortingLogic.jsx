@@ -126,6 +126,30 @@ const SortingLogic = () => {
   let teamOneVal = 0;
   let teamTwoVal = 0;
 
+  //Fischer-Yates shuffle aglorithm to randomize order each render.  This one is a famous shuffling method I did not create.  Props to the creators.
+
+  function shuffle(array) {
+    let currentIndex = array.length,
+      randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
+    }
+
+    return array;
+  }
+
+  shuffle(cards);
+
   // Most Basic Test logic for testing purposes
   for (let player of cards) {
     if (teamTwoVal + player.rating >= teamOneVal) {
