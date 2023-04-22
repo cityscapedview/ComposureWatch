@@ -151,6 +151,8 @@ const SortingLogic = () => {
   shuffle(cards);
 
   // Most Basic Test logic for testing purposes
+  //Modify function to account for tema rating difference
+  // For example .5 diff max
   for (let player of cards) {
     if (teamTwoVal + player.rating >= teamOneVal) {
       teamOneVal += player.rating;
@@ -193,12 +195,12 @@ const SortingLogic = () => {
       <CardList info={teamOne} />
       <div className="flex flex-col justify-center items-center">
         <div className="text-red-600  text-4xl">
-          <p>Team One Value: {teamOneVal}</p>
+          <p>Team One Value: {teamOneVal.toFixed(2)}</p>
           <p>Players: {teamOneLength}</p>
         </div>
         <div className="text-white font-bold italic text-8xl py-8">VS</div>
         <div className="text-blue-600  text-4xl">
-          <p>Team Two Value: {teamTwoVal}</p>
+          <p>Team Two Value: {teamTwoVal.toFixed(2)}</p>
           <p>Players: {teamTwoLength}</p>
         </div>
       </div>
