@@ -9,10 +9,6 @@ import grandmaster from "../../../images/badge/grandmaster.webp";
 const RankIcon = ({ rank }) => {
   const rankList = [
     {
-      id: "bronze",
-      img: bronze,
-    },
-    {
       id: "bronze5",
       img: bronze,
     },
@@ -31,10 +27,6 @@ const RankIcon = ({ rank }) => {
     {
       id: "bronze1",
       img: bronze,
-    },
-    {
-      id: "silver",
-      img: silver,
     },
     {
       id: "silver5",
@@ -56,10 +48,7 @@ const RankIcon = ({ rank }) => {
       id: "silver1",
       img: silver,
     },
-    {
-      id: "gold",
-      img: gold,
-    },
+
     {
       id: "gold5",
       img: gold,
@@ -80,10 +69,7 @@ const RankIcon = ({ rank }) => {
       id: "gold1",
       img: gold,
     },
-    {
-      id: "platinum",
-      img: platinum,
-    },
+
     {
       id: "platinum5",
       img: platinum,
@@ -103,10 +89,6 @@ const RankIcon = ({ rank }) => {
     {
       id: "platinum1",
       img: platinum,
-    },
-    {
-      id: "diamond",
-      img: diamond,
     },
     {
       id: "diamond5",
@@ -129,10 +111,6 @@ const RankIcon = ({ rank }) => {
       img: diamond,
     },
     {
-      id: "master",
-      img: master,
-    },
-    {
       id: "master5",
       img: master,
     },
@@ -151,10 +129,6 @@ const RankIcon = ({ rank }) => {
     {
       id: "master1",
       img: master,
-    },
-    {
-      id: "grandMaster",
-      img: grandmaster,
     },
     {
       id: "grandMaster5",
