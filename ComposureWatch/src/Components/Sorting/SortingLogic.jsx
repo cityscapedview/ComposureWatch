@@ -151,7 +151,7 @@ const SortingLogic = () => {
   shuffle(cards);
 
   // Most Basic Test logic for testing purposes
-  //Modify function to account for tema rating difference
+  //Modify function to account for team rating difference
   // For example .5 diff max
   for (let player of cards) {
     if (teamTwoVal + player.rating >= teamOneVal) {
