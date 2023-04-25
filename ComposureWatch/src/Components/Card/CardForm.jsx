@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ratingSort from "../Sorting/ratingSort";
 
 const CardForm = (props) => {
   const [enteredName, setEnteredName] = useState("Enter Player Name");
@@ -29,11 +30,18 @@ const CardForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
+    const chosenRank = selectedRank;
+    console.log(chosenRank);
+    const foundRating = ratingSort(chosenRank);
+
+    console.log(foundRating);
+
     const charData = {
       id: count,
       name: enteredName,
       character: selectedCharacter,
       rank: selectedRank,
+      rating: foundRating,
     };
     console.log(charData);
     props.onSaveCharData(charData);
