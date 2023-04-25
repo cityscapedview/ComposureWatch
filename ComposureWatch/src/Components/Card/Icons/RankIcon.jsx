@@ -39,6 +39,11 @@ const RankIcon = ({ rank }) => {
     },
   ];
 
+  const SearchImg = (attribute, list) => {
+    let result = list.filter((item) => item.id === attribute);
+    return result[0].img;
+  };
+
   let charRank = SearchImg(rank, rankList);
 
   return <img src={charRank} alt="character rank" className="" />;
