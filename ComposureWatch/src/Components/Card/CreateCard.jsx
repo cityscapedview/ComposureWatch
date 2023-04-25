@@ -8,7 +8,8 @@ const DUMMY_CARDS = [
     id: 1337,
     name: "Zen",
     character: "ana",
-    rank: "platinum",
+    rank: "platinum3",
+    rating: 1.35,
   },
 ];
 
