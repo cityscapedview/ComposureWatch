@@ -30,6 +30,7 @@ import ana from "../../../images/portraits/ana.png";
 import baptiste from "../../../images/portraits/baptiste.png";
 import brigitte from "../../../images/portraits/brigitte.png";
 import kiriko from "../../../images/portraits/kiriko.png";
+import lifeweaver from "../../../images/portraits/lifeweaver.png";
 import lucio from "../../../images/portraits/lucio.png";
 import mercy from "../../../images/portraits/mercy.png";
 import moira from "../../../images/portraits/moira.png";
@@ -165,6 +166,10 @@ const CharIcon = ({ character }) => {
     {
       id: "kiriko",
       img: kiriko,
+    },
+    {
+      id: "lifeweaver",
+      img: lifeweaver,
     },
     {
       id: "lucio",
