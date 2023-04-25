@@ -114,13 +114,41 @@ const CardForm = (props) => {
           className="text-black block"
         >
           <option value="selector">{selectedRank}</option>
-          <option value="grandMaster">Grand Master</option>
-          <option value="master">Master</option>
-          <option value="diamond">Diamond</option>
-          <option value="platinum">Platinum</option>
-          <option value="gold">Gold</option>
-          <option value="silver">Silver</option>
-          <option value="bronze">Bronze</option>
+          <option value="grandMaster1">Grand Master 1</option>
+          <option value="grandMaster2">Grand Master 2</option>
+          <option value="grandMaster3">Grand Master 3</option>
+          <option value="grandMaster4">Grand Master 4</option>
+          <option value="grandMaster5">Grand Master 5</option>
+          <option value="master1">Master 1</option>
+          <option value="master2">Master 2</option>
+          <option value="master3">Master 3</option>
+          <option value="master4">Master 4</option>
+          <option value="master5">Master 5</option>
+          <option value="diamond1">Diamond 1</option>
+          <option value="diamond2">Diamond 2</option>
+          <option value="diamond3">Diamond 3</option>
+          <option value="diamond4">Diamond 4</option>
+          <option value="diamond5">Diamond 5</option>
+          <option value="platinum1">Platinum 1</option>
+          <option value="platinum2">Platinum 2</option>
+          <option value="platinum3">Platinum 3</option>
+          <option value="platinum4">Platinum 4</option>
+          <option value="platinum5">Platinum 5</option>
+          <option value="gold1">Gold 1</option>
+          <option value="gold2">Gold 2</option>
+          <option value="gold3">Gold 3</option>
+          <option value="gold4">Gold 4</option>
+          <option value="gold5">Gold 5</option>
+          <option value="silver1">Silver 1</option>
+          <option value="silver2">Silver 2</option>
+          <option value="silver3">Silver 3</option>
+          <option value="silver4">Silver 4</option>
+          <option value="silver5">Silver 5</option>
+          <option value="bronze1">Bronze 1</option>
+          <option value="bronze2">Bronze 2</option>
+          <option value="bronze3">Bronze 3</option>
+          <option value="bronze4">Bronze 4</option>
+          <option value="bronze5">Bronze 5</option>
         </select>
       </div>
       <button
