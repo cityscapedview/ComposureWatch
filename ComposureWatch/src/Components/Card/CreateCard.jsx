@@ -9,6 +9,7 @@ const DUMMY_CARDS = [
     name: "Zen",
     character: "ana",
     rank: "platinum3",
+    rating: 1.35,
   },
 ];
 
