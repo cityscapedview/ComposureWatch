@@ -31,10 +31,7 @@ const CardForm = (props) => {
     event.preventDefault();
 
     const chosenRank = selectedRank;
-    console.log(chosenRank);
     const foundRating = ratingSort(chosenRank);
-
-    console.log(foundRating);
 
     const charData = {
       id: count,
