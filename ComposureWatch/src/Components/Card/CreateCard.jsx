@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CardForm from "./CardForm";
-import PlayerCards from "./PlayerCards";
 import CardList from "./CardList";
+import SortingLogic from "../Sorting/SortingLogic";
 
 const DUMMY_CARDS = [
   {
@@ -32,13 +32,13 @@ const CreateCard = () => {
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
         <CardList info={cards} />
 
-        <div className="text-white font-bold italic text-8xl">VS</div>
         <button
           type="submit"
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
         </button>
+        <SortingLogic />
       </div>
     </div>
   );
