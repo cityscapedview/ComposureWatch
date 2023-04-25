@@ -142,12 +142,15 @@ const ratingSort = (selectedRank) => {
     },
   ];
 
+  console.log(selectedRank);
+
   const searchRating = (selected, list) => {
     let result = list.filter((item) => item.id === selected);
-    return result.rating;
+    return result[0].rating;
   };
 
   const ratingResult = searchRating(selectedRank, ranks);
+
   return ratingResult;
 };
 
