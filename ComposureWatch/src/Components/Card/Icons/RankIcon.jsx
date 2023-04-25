@@ -13,7 +13,47 @@ const RankIcon = ({ rank }) => {
       img: bronze,
     },
     {
+      id: "bronze5",
+      img: bronze,
+    },
+    {
+      id: "bronze4",
+      img: bronze,
+    },
+    {
+      id: "bronze3",
+      img: bronze,
+    },
+    {
+      id: "bronze2",
+      img: bronze,
+    },
+    {
+      id: "bronze1",
+      img: bronze,
+    },
+    {
       id: "silver",
+      img: silver,
+    },
+    {
+      id: "silver5",
+      img: silver,
+    },
+    {
+      id: "silver4",
+      img: silver,
+    },
+    {
+      id: "silver3",
+      img: silver,
+    },
+    {
+      id: "silver2",
+      img: silver,
+    },
+    {
+      id: "silver1",
       img: silver,
     },
     {
@@ -21,7 +61,47 @@ const RankIcon = ({ rank }) => {
       img: gold,
     },
     {
+      id: "gold5",
+      img: gold,
+    },
+    {
+      id: "gold4",
+      img: gold,
+    },
+    {
+      id: "gold3",
+      img: gold,
+    },
+    {
+      id: "gold2",
+      img: gold,
+    },
+    {
+      id: "gold1",
+      img: gold,
+    },
+    {
       id: "platinum",
+      img: platinum,
+    },
+    {
+      id: "platinum5",
+      img: platinum,
+    },
+    {
+      id: "platinum4",
+      img: platinum,
+    },
+    {
+      id: "platinum3",
+      img: platinum,
+    },
+    {
+      id: "platinum2",
+      img: platinum,
+    },
+    {
+      id: "platinum1",
       img: platinum,
     },
     {
@@ -29,11 +109,71 @@ const RankIcon = ({ rank }) => {
       img: diamond,
     },
     {
+      id: "diamond5",
+      img: diamond,
+    },
+    {
+      id: "diamond4",
+      img: diamond,
+    },
+    {
+      id: "diamond3",
+      img: diamond,
+    },
+    {
+      id: "diamond2",
+      img: diamond,
+    },
+    {
+      id: "diamond1",
+      img: diamond,
+    },
+    {
       id: "master",
       img: master,
     },
     {
+      id: "master5",
+      img: master,
+    },
+    {
+      id: "master4",
+      img: master,
+    },
+    {
+      id: "master3",
+      img: master,
+    },
+    {
+      id: "master2",
+      img: master,
+    },
+    {
+      id: "master1",
+      img: master,
+    },
+    {
       id: "grandMaster",
+      img: grandmaster,
+    },
+    {
+      id: "grandMaster5",
+      img: grandmaster,
+    },
+    {
+      id: "grandMaster4",
+      img: grandmaster,
+    },
+    {
+      id: "grandMaster3",
+      img: grandmaster,
+    },
+    {
+      id: "grandMaster2",
+      img: grandmaster,
+    },
+    {
+      id: "grandMaster1",
       img: grandmaster,
     },
   ];
