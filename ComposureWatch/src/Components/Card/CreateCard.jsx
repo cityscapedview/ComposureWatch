@@ -16,10 +16,28 @@ const DUMMY_CARDS = [
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
 
+  const [kumite, setKumite] = useState("dog");
+
   const onSaveCharDataHandler = (enteredCharData) => {
     setCards((prevCards) => {
       return [enteredCharData, ...prevCards];
     });
+  };
+
+  const kumiteChangeHandler = () => {
+    setKumite("cat");
+  };
+  console.log(kumite);
+
+  const CondRender = ({ cards, kumite }) => {
+    if (kumite === "dog") {
+      // return <SortingLogic />;
+      return <div>Dog</div>;
+    } else {
+      console.log(kumite);
+      // return <SortingLogic info={cards} />;
+      return <div>Cat</div>;
+    }
   };
 
   return (
@@ -31,14 +49,14 @@ const CreateCard = () => {
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
         <CardList info={cards} />
-
         <button
           type="submit"
+          onClick={kumiteChangeHandler}
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
         </button>
-        <SortingLogic />
+        <CondRender cards={cards} kumite={kumite} />
       </div>
     </div>
   );
