@@ -3,6 +3,7 @@ import React from "react";
 import PlayerCards from "./PlayerCards";
 
 const CardList = (props) => {
+  console.log(props);
   if (props.info.length === 0) {
     return <h2>No Cards</h2>;
   }

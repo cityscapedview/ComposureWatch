@@ -1,44 +1,42 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
 import CardList from "../Card/CardList";
 
-const SortingLogic = (cards) => {
-  console.log(cards);
-
+const SortingLogic = (props) => {
   // Below is imported card example for logic to run
   // const cards = [
   //   {
   //     id: 1,
   //     name: "Lightster",
   //     character: "reaper",
-  //     rank: "gold3",
+  //     rank: "platinum3",
   //     rating: 1,
   //   },
   //   {
   //     id: 2,
   //     name: "Mia",
   //     character: "hanzo",
-  //     rank: "gold3",
+  //     rank: "platinum3",
   //     rating: 1.05,
   //   },
   //   {
   //     id: 3,
   //     name: "Ollie",
   //     character: "junkrat",
-  //     rank: "diamond3",
+  //     rank: "platinum3",
   //     rating: 1.6,
   //   },
   //   {
   //     id: 4,
   //     name: "Zulu",
   //     character: "ana",
-  //     rank: "diamond3",
+  //     rank: "platinum3",
   //     rating: 1.65,
   //   },
   //   {
   //     id: 5,
   //     name: "Raihn",
-  //     character: "reinhardt3",
-  //     rank: "silver3",
+  //     character: "reinhardt",
+  //     rank: "platinum3",
   //     rating: 0.9,
   //   },
   //   {
@@ -52,7 +50,7 @@ const SortingLogic = (cards) => {
   //     id: 7,
   //     name: "netbattler",
   //     character: "ana",
-  //     rank: "gold3",
+  //     rank: "platinum3",
   //     rating: 1.05,
   //   },
   //   {
@@ -66,7 +64,7 @@ const SortingLogic = (cards) => {
   //     id: 9,
   //     name: "twenty7",
   //     character: "pharah",
-  //     rank: "silver3",
+  //     rank: "platinum3",
   //     rating: 0.95,
   //   },
   //   {
@@ -77,6 +75,8 @@ const SortingLogic = (cards) => {
   //     rating: 1.35,
   //   },
   // ];
+
+  console.log(props.info);
 
   // Logic instructions:
   // Randomize ids for new teams with same players on "kumite" button press.
@@ -112,12 +112,12 @@ const SortingLogic = (cards) => {
     return array;
   }
 
-  // shuffle(cards);
+  shuffle(props.info);
 
   // Most Basic Test logic for testing purposes
   //Modify function to account for team rating difference
   // For example .5 diff max
-  for (let player of cards) {
+  for (let player of props.info) {
     if (teamTwoVal + player.rating >= teamOneVal) {
       teamOneVal += player.rating;
       teamOne.push(player);
