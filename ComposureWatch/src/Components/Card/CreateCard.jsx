@@ -63,10 +63,17 @@ const CreateCard = () => {
         <CardList info={cards} />
         <button
           type="submit"
-          onClick={kumiteChangeHandler}
+          onClick={cardSortChangeHandler}
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
+        </button>
+        <button
+          type="submit"
+          onClick={kumiteChangeHandler}
+          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
+        >
+          Shuffle Team
         </button>
         <CondRender kumite={kumite} />
         {/* <SortingLogic info={cardVar} /> */}
