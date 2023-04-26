@@ -40,7 +40,7 @@ const CardForm = (props) => {
       rank: selectedRank,
       rating: foundRating,
     };
-    console.log(charData);
+
     props.onSaveCharData(charData);
     setEnteredName("Enter Player Name");
     setSelectedCharacter("Select Character");

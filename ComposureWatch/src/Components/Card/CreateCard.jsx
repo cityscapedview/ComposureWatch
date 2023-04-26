@@ -18,6 +18,8 @@ const CreateCard = () => {
 
   const [kumite, setKumite] = useState("dog");
 
+  const [cardVar, setCardVar] = useState("");
+
   const onSaveCharDataHandler = (enteredCharData) => {
     setCards((prevCards) => {
       return [enteredCharData, ...prevCards];
@@ -27,6 +29,12 @@ const CreateCard = () => {
   const kumiteChangeHandler = () => {
     setKumite("cat");
   };
+
+  const cardSortChangeHandler = () => {
+    let currentCards = cards;
+    setCardVar(currentCards);
+  };
+
   console.log(kumite);
 
   const CondRender = ({ cards, kumite }) => {
@@ -51,12 +59,13 @@ const CreateCard = () => {
         <CardList info={cards} />
         <button
           type="submit"
-          onClick={kumiteChangeHandler}
+          onClick={cardSortChangeHandler}
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
         </button>
-        <CondRender cards={cards} kumite={kumite} />
+        {/* <CondRender cards={cards} kumite={kumite} /> */}
+        <SortingLogic info={cardVar} />
       </div>
     </div>
   );
