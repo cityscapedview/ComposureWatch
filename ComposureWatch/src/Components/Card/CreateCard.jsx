@@ -31,13 +31,8 @@ const CreateCard = () => {
   };
 
   const cardSortChangeHandler = () => {
-    let currentCards = cards;
+    let currentCards = [...cards];
     setCardVar(currentCards);
-  };
-
-  const onClickHandler = () => {
-    cardSortChangeHandler;
-    kumiteChangeHandler;
   };
 
   const CondRender = ({ kumite }) => {
