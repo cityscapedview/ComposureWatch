@@ -16,7 +16,7 @@ const DUMMY_CARDS = [
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
 
-  const [kumite, setKumite] = useState("dog");
+  const [kumite, setKumite] = useState(false);
 
   const [cardVar, setCardVar] = useState("");
 
@@ -27,7 +27,7 @@ const CreateCard = () => {
   };
 
   const kumiteChangeHandler = () => {
-    setKumite("cat");
+    setKumite((prevKumite) => !prevKumite);
   };
 
   const cardSortChangeHandler = () => {
@@ -35,15 +35,19 @@ const CreateCard = () => {
     setCardVar(currentCards);
   };
 
-  console.log(kumite);
+  const onClickHandler = () => {
+    cardSortChangeHandler;
+    kumiteChangeHandler;
+  };
 
-  const CondRender = ({ cards, kumite }) => {
-    if (kumite === "dog") {
-      return null;
-      // return <div>Dog</div>;
-    } else {
+  const CondRender = ({ kumite }) => {
+    if (kumite === false) {
       console.log(kumite);
-      return <SortingLogic info={cards} />;
+      return <SortingLogic info={cardVar} />;
+      // return <div>Dog</div>;
+    } else if (kumite === true) {
+      console.log(kumite);
+      return <SortingLogic info={cardVar} />;
       // return <div>Cat</div>;
     }
   };
@@ -59,13 +63,13 @@ const CreateCard = () => {
         <CardList info={cards} />
         <button
           type="submit"
-          onClick={cardSortChangeHandler}
+          onClick={kumiteChangeHandler}
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
         </button>
-        {/* <CondRender cards={cards} kumite={kumite} /> */}
-        <SortingLogic info={cardVar} />
+        <CondRender kumite={kumite} />
+        {/* <SortingLogic info={cardVar} /> */}
       </div>
     </div>
   );
