@@ -31,12 +31,12 @@ const CreateCard = () => {
 
   const CondRender = ({ cards, kumite }) => {
     if (kumite === "dog") {
-      // return <SortingLogic />;
-      return <div>Dog</div>;
+      return null;
+      // return <div>Dog</div>;
     } else {
       console.log(kumite);
-      // return <SortingLogic info={cards} />;
-      return <div>Cat</div>;
+      return <SortingLogic info={cards} />;
+      // return <div>Cat</div>;
     }
   };
 
