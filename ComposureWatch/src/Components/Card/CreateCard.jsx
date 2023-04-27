@@ -37,11 +37,9 @@ const CreateCard = () => {
 
   const CondRender = ({ kumite }) => {
     if (kumite === false) {
-      console.log(kumite);
       return <SortingLogic info={cardVar} />;
       // return <div>Dog</div>;
     } else if (kumite === true) {
-      console.log(kumite);
       return <SortingLogic info={cardVar} />;
       // return <div>Cat</div>;
     }
@@ -71,7 +69,6 @@ const CreateCard = () => {
           Shuffle Team
         </button>
         <CondRender kumite={kumite} />
-        {/* <SortingLogic info={cardVar} /> */}
       </div>
     </div>
   );
