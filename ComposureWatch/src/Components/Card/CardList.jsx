@@ -9,7 +9,7 @@ const CardList = (props) => {
   }
 
   return (
-    <ul>
+    <ul className="grid grid-cols-6 gap-4">
       {props.info.map((card) => (
         <PlayerCards
           id={card.id}
