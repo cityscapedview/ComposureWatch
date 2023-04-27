@@ -80,7 +80,9 @@ const SortingLogic = (props) => {
 
   return (
     <div>
-      <CardList info={teamOne} />
+      <div className="border-2 border-red-600 rounded">
+        <CardList info={teamOne} />
+      </div>
       <div className="flex flex-row justify-center items-center space-x-52">
         <div className="text-red-600  text-2xl">
           <p>Team One Value: {teamOneVal.toFixed(2)}</p>
@@ -92,7 +94,9 @@ const SortingLogic = (props) => {
           <p>Players: {teamTwoLength}</p>
         </div>
       </div>
-      <CardList info={teamTwo} />
+      <div className="border-2 border-blue-600 rounded">
+        <CardList info={teamTwo} />
+      </div>
     </div>
   );
 };
