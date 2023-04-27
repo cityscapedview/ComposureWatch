@@ -54,7 +54,7 @@ const CreateCard = () => {
         <p>Enter player information below</p>
         <CardForm onSaveCharData={onSaveCharDataHandler} />
       </div>
-      <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
+      <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList info={cards} />
         <button
           type="submit"
