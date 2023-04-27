@@ -159,7 +159,7 @@ const RankIcon = ({ rank }) => {
 
   let charRank = SearchImg(rank, rankList);
 
-  return <img className="h-[80px]" src={charRank} alt="character rank" />;
+  return <img className="h-[60px]" src={charRank} alt="character rank" />;
 };
 
 export default RankIcon;
