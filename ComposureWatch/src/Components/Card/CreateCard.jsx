@@ -54,20 +54,22 @@ const CreateCard = () => {
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList info={cards} />
-        <button
-          type="submit"
-          onClick={cardSortChangeHandler}
-          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
-        >
-          Kumite!
-        </button>
-        <button
-          type="submit"
-          onClick={kumiteChangeHandler}
-          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
-        >
-          Shuffle Team
-        </button>
+        <div className="flex flex-row">
+          <button
+            type="submit"
+            onClick={cardSortChangeHandler}
+            className="bg-blue-600 w-30 h-15 mx-2 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 inline-block hover:bg-red-600"
+          >
+            Kumite!
+          </button>
+          <button
+            type="submit"
+            onClick={kumiteChangeHandler}
+            className="bg-blue-600 w-30 h-15 mx-2 px-6 py-3 uppercase font-semibold inline-block rounded-sm opacity-80 hover:bg-red-600"
+          >
+            Shuffle Team
+          </button>
+        </div>
         <CondRender kumite={kumite} />
       </div>
     </div>
