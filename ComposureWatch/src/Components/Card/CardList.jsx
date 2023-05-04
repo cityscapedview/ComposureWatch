@@ -8,7 +8,7 @@ const CardList = (props) => {
   }
 
   return (
-    <ul className="grid grid-cols-6 gap-4">
+    <ul className="grid col-1 sm:grid-cols-3 md:grid-cols-6 gap-x-6 gap-y-8">
       {props.info.map((card) => (
         <PlayerCards
           id={card.id}
