@@ -54,7 +54,7 @@ const CreateCard = () => {
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList info={cards} />
-        <div className="flex flex-row">
+        <div className="flex flex-row pt-10 pb-6">
           <button
             type="submit"
             onClick={cardSortChangeHandler}

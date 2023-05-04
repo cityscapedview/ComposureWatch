@@ -79,7 +79,7 @@ const SortingLogic = (props) => {
   let teamTwoLength = teamTwo.length;
 
   return (
-    <div>
+    <>
       <div>
         <CardList info={teamOne} />
       </div>
@@ -97,7 +97,7 @@ const SortingLogic = (props) => {
       <div>
         <CardList info={teamTwo} />
       </div>
-    </div>
+    </>
   );
 };
 export default SortingLogic;
