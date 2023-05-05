@@ -83,7 +83,7 @@ const SortingLogic = (props) => {
       <div>
         <CardList info={teamOne} />
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-52">
+      <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
         <div className="text-red-600  text-2xl">
           <p>Team One Value: {teamOneVal.toFixed(2)}</p>
           <p>Players: {teamOneLength}</p>
