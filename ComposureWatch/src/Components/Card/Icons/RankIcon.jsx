@@ -161,7 +161,7 @@ const RankIcon = ({ rank }) => {
 
   return (
     <img
-      className="h-[45px] mt-[-6px] mb-2"
+      className="h-[40px] mt-[-5px] mb-2"
       src={charRank}
       alt="character rank"
     />

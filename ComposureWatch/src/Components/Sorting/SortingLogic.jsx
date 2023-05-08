@@ -88,7 +88,7 @@ const SortingLogic = (props) => {
           <p>Team One Value: {teamOneVal.toFixed(2)}</p>
           <p>Players: {teamOneLength}</p>
         </div>
-        <div className="text-white font-bold italic text-7xl py-6">VS</div>
+        <div className="text-white font-bold italic text-7xl py-2">VS</div>
         <div className="text-blue-600  text-xl">
           <p>Team Two Value: {teamTwoVal.toFixed(2)}</p>
           <p>Players: {teamTwoLength}</p>
