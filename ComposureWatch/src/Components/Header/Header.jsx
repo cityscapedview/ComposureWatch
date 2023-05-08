@@ -8,7 +8,7 @@ import EllipsesSvg from "../SVG/EllipsesSvg";
 
 const Header = () => {
   return (
-    <div className="fixed md:top-4 right-0 left-0 z-[6]">
+    <div className="sticky md:top-4 right-0 left-0 z-[6]">
       <header className="md:mx-4 px-12 py-2 md:py-3 flex justify-center md:justify-start items-center md:space-x-6 border md:rounded-lg text-black bg-[rgba(229,235,244,0.95)] relative whitespace-nowrap">
         <div className="bg-white text-blue-400 hover:text-blue-300 cursor-pointer px-5 pt-4 h-full absolute left-0 top-0 font-bold text-xl uppercase tracking-tighter rounded-l-lg hidden md:block">
           Blissard
