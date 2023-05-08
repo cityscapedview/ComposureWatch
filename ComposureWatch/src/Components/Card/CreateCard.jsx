@@ -16,10 +16,35 @@ const DUMMY_CARDS = [
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
 
+  const [kumite, setKumite] = useState(false);
+
+  const [cardVar, setCardVar] = useState("");
+
   const onSaveCharDataHandler = (enteredCharData) => {
     setCards((prevCards) => {
       return [enteredCharData, ...prevCards];
     });
+  };
+
+  const kumiteChangeHandler = () => {
+    setKumite((prevKumite) => !prevKumite);
+  };
+
+  const cardSortChangeHandler = () => {
+    let currentCards = [...cards];
+    setCardVar(currentCards);
+  };
+
+  const CondRender = ({ kumite }) => {
+    if (kumite === false) {
+      console.log(kumite);
+      return <SortingLogic info={cardVar} />;
+      // return <div>Dog</div>;
+    } else if (kumite === true) {
+      console.log(kumite);
+      return <SortingLogic info={cardVar} />;
+      // return <div>Cat</div>;
+    }
   };
 
   return (
@@ -31,14 +56,22 @@ const CreateCard = () => {
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
         <CardList info={cards} />
-
         <button
           type="submit"
+          onClick={cardSortChangeHandler}
           className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
         >
           Kumite!
         </button>
-        <SortingLogic />
+        <button
+          type="submit"
+          onClick={kumiteChangeHandler}
+          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
+        >
+          Shuffle Team
+        </button>
+        <CondRender kumite={kumite} />
+        {/* <SortingLogic info={cardVar} /> */}
       </div>
     </div>
   );
