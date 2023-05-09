@@ -13,11 +13,12 @@ const PlayerCards = ({ id, name, character, rank }) => {
             </div>
             <h2 className="italic text-xl leading-10">{name}</h2>
             <RankIcon rank={rank} />
-            <img
-              src={checkMark}
-              alt="checkmark"
-              className="h-[18px] border-[#2EF3FF] border-opacity-75 rounded-lg border-2 cursor-pointer"
-            ></img>
+            <button
+              type="submit"
+              className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer"
+            >
+              <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
+            </button>
           </div>
         </div>
       </div>
