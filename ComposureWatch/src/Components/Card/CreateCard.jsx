@@ -38,12 +38,11 @@ const CreateCard = () => {
 
   const cardRemoveChangeHandler = (enteredId) => {
     console.log(enteredId);
-    //this part needs to be rethought.  Index isn't a good indicator of how to do this.
-    let index = enteredId + 1;
+
     setCards((prevCards) => {
-      //This part needs to be reworked.  Index isn't a good indicator of how to do this.
-      prevCards.splice(index, 1);
-      return prevCards;
+      return prevCards.filter((object) => {
+        return object.id !== enteredId;
+      });
     });
   };
 
