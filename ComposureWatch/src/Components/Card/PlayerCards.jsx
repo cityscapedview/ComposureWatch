@@ -1,5 +1,6 @@
 import RankIcon from "./Icons/RankIcon";
 import CharIcon from "./Icons/CharIcon";
+import checkMark from "../../images/icons/checkMark.png";
 
 const PlayerCards = ({ id, name, character, rank }) => {
   return (
@@ -12,6 +13,11 @@ const PlayerCards = ({ id, name, character, rank }) => {
             </div>
             <h2 className="italic text-xl leading-10">{name}</h2>
             <RankIcon rank={rank} />
+            <img
+              src={checkMark}
+              alt="checkmark"
+              className="h-[18px] border-[#2EF3FF] border-opacity-75 rounded-lg border-2 cursor-pointer"
+            ></img>
           </div>
         </div>
       </div>
