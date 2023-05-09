@@ -3,14 +3,19 @@ import CharIcon from "./Icons/CharIcon";
 import checkMark from "../../images/icons/checkMark.png";
 import React, { useState } from "react";
 
-const PlayerCards = ({ id, name, character, rank }) => {
-  const [displayed, setDisplayed] = useState(true);
-
-  const displayedChangeHandler = () => {
-    setDisplayed((prevDisplayed) => !prevDisplayed);
+const PlayerCards = ({
+  id,
+  name,
+  character,
+  rank,
+  cardRemoveChangeHandler,
+}) => {
+  const clickHandler = () => {
+    const enteredId = id;
+    cardRemoveChangeHandler(enteredId);
   };
 
-  console.log(displayed);
+  console.log(name);
 
   return (
     <li key={id} className="px-0">
@@ -24,8 +29,8 @@ const PlayerCards = ({ id, name, character, rank }) => {
             <RankIcon rank={rank} />
             <button
               type="submit"
-              onClick={displayedChangeHandler}
-              className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer"
+              onClick={clickHandler}
+              className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer hover:bg-opacity-50"
             >
               <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
             </button>

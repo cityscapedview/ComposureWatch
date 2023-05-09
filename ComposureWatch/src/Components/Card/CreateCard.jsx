@@ -15,6 +15,7 @@ const DUMMY_CARDS = [
 
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
+  console.log(cards);
 
   const [kumite, setKumite] = useState(false);
 
@@ -35,6 +36,13 @@ const CreateCard = () => {
     setCardVar(currentCards);
   };
 
+  const cardRemoveChangeHandler = (enteredId) => {
+    let index = enteredId + 1;
+    setCards((prevCards) => {
+      return prevCards.splice(index, 1);
+    });
+  };
+
   const CondRender = ({ kumite }) => {
     if (kumite === false) {
       return <SortingLogic info={cardVar} />;
@@ -53,7 +61,10 @@ const CreateCard = () => {
         <CardForm onSaveCharData={onSaveCharDataHandler} />
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
-        <CardList info={cards} />
+        <CardList
+          info={cards}
+          cardRemoveChangeHandler={cardRemoveChangeHandler}
+        />
         <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row pt-[120px] pb-[120px]">
           <button
             type="submit"

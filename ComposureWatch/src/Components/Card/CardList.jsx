@@ -16,6 +16,7 @@ const CardList = (props) => {
           character={card.character}
           rank={card.rank}
           rating={card.rating}
+          cardRemoveChangeHandler={props.cardRemoveChangeHandler}
         />
       ))}
     </ul>
