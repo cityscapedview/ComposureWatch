@@ -1,7 +1,7 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
 import CardList from "../Card/CardList";
-import TeamOneCards from "../Card/TeamOneCards";
-import TeamTwoCards from "../Card/TeamTwoCards";
+import TeamOneCardList from "../Card/TeamOneCardList";
+import TeamTwoCardList from "../Card/TeamTwoCardList";
 
 const SortingLogic = (props) => {
   // Logic instructions:
@@ -83,7 +83,7 @@ const SortingLogic = (props) => {
   return (
     <>
       <div>
-        <CardList info={teamOne} />
+        <TeamOneCardList info={teamOne} />
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
         <div className="text-red-600  text-xl">
@@ -97,7 +97,7 @@ const SortingLogic = (props) => {
         </div>
       </div>
       <div>
-        <CardList info={teamTwo} />
+        <TeamTwoCardList info={teamTwo} />
       </div>
     </>
   );
