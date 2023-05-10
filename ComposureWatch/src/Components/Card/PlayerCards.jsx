@@ -30,7 +30,7 @@ const PlayerCards = ({
             <button
               type="submit"
               onClick={clickHandler}
-              className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer hover:bg-opacity-50"
+              className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer hover:bg-[#250509] hover:border-[#DD1929] hover:duration-150"
             >
               <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
             </button>
