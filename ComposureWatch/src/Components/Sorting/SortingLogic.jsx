@@ -1,5 +1,7 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
 import CardList from "../Card/CardList";
+import TeamOneCards from "../Card/TeamOneCards";
+import TeamTwoCards from "../Card/TeamTwoCards";
 
 const SortingLogic = (props) => {
   // Logic instructions:
