@@ -7,8 +7,8 @@ function XMarkSvg() {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={3}
-        stroke="currentColor"
+        strokeWidth={3.5}
+        stroke="#fff"
         className="w-[18px] h-[18px]"
       >
         <path
