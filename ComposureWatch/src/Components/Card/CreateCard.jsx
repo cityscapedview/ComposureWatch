@@ -15,7 +15,6 @@ const DUMMY_CARDS = [
 
 const CreateCard = () => {
   const [cards, setCards] = useState(DUMMY_CARDS);
-  console.log(cards);
 
   const [kumite, setKumite] = useState(false);
 
