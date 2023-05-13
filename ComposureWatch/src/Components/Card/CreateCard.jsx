@@ -35,10 +35,10 @@ const CreateCard = () => {
     setCardVar(currentCards);
   };
 
-  const cardRemoveChangeHandler = (enteredId) => {
+  const cardRemoveChangeHandler = (cardId) => {
     setCards((prevCards) => {
       return prevCards.filter((card) => {
-        return card.id !== enteredId;
+        return card.id !== cardId;
       });
     });
   };
