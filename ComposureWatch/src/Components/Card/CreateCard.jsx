@@ -37,8 +37,8 @@ const CreateCard = () => {
 
   const cardRemoveChangeHandler = (enteredId) => {
     setCards((prevCards) => {
-      return prevCards.filter((object) => {
-        return object.id !== enteredId;
+      return prevCards.filter((card) => {
+        return card.id !== enteredId;
       });
     });
   };
