@@ -2,82 +2,6 @@
 import CardList from "../Card/CardList";
 
 const SortingLogic = (props) => {
-  // Below is imported card example for logic to run
-  // const cards = [
-  //   {
-  //     id: 1,
-  //     name: "Lightster",
-  //     character: "reaper",
-  //     rank: "platinum3",
-  //     rating: 1,
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Mia",
-  //     character: "hanzo",
-  //     rank: "platinum3",
-  //     rating: 1.05,
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Ollie",
-  //     character: "junkrat",
-  //     rank: "platinum3",
-  //     rating: 1.6,
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Zulu",
-  //     character: "ana",
-  //     rank: "platinum3",
-  //     rating: 1.65,
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "Raihn",
-  //     character: "reinhardt",
-  //     rank: "platinum3",
-  //     rating: 0.9,
-  //   },
-  //   {
-  //     id: 6,
-  //     name: "Ivysaur",
-  //     character: "widowmaker",
-  //     rank: "platinum3",
-  //     rating: 1.25,
-  //   },
-  //   {
-  //     id: 7,
-  //     name: "netbattler",
-  //     character: "ana",
-  //     rank: "platinum3",
-  //     rating: 1.05,
-  //   },
-  //   {
-  //     id: 8,
-  //     name: "Zen",
-  //     character: "moira",
-  //     rank: "platinum3",
-  //     rating: 1.35,
-  //   },
-  //   {
-  //     id: 9,
-  //     name: "twenty7",
-  //     character: "pharah",
-  //     rank: "platinum3",
-  //     rating: 0.95,
-  //   },
-  //   {
-  //     id: 10,
-  //     name: "flockwood",
-  //     character: "zenyatta",
-  //     rank: "platinum3",
-  //     rating: 1.35,
-  //   },
-  // ];
-
-  console.log(props.info);
-
   // Logic instructions:
   // Randomize ids for new teams with same players on "kumite" button press.
   // Sort players by rating into two objects
@@ -155,21 +79,25 @@ const SortingLogic = (props) => {
   let teamTwoLength = teamTwo.length;
 
   return (
-    <div>
-      <CardList info={teamOne} />
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-red-600  text-4xl">
+    <>
+      <div>
+        <CardList info={teamOne} />
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
+        <div className="text-red-600  text-xl">
           <p>Team One Value: {teamOneVal.toFixed(2)}</p>
           <p>Players: {teamOneLength}</p>
         </div>
-        <div className="text-white font-bold italic text-8xl py-8">VS</div>
-        <div className="text-blue-600  text-4xl">
+        <div className="text-white font-bold italic text-7xl py-2">VS</div>
+        <div className="text-blue-600  text-xl">
           <p>Team Two Value: {teamTwoVal.toFixed(2)}</p>
           <p>Players: {teamTwoLength}</p>
         </div>
       </div>
-      <CardList info={teamTwo} />
-    </div>
+      <div>
+        <CardList info={teamTwo} />
+      </div>
+    </>
   );
 };
 export default SortingLogic;

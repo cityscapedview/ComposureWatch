@@ -37,11 +37,9 @@ const CreateCard = () => {
 
   const CondRender = ({ kumite }) => {
     if (kumite === false) {
-      console.log(kumite);
       return <SortingLogic info={cardVar} />;
       // return <div>Dog</div>;
     } else if (kumite === true) {
-      console.log(kumite);
       return <SortingLogic info={cardVar} />;
       // return <div>Cat</div>;
     }
@@ -54,24 +52,25 @@ const CreateCard = () => {
         <p>Enter player information below</p>
         <CardForm onSaveCharData={onSaveCharDataHandler} />
       </div>
-      <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-80 px-40">
+      <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList info={cards} />
-        <button
-          type="submit"
-          onClick={cardSortChangeHandler}
-          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
-        >
-          Kumite!
-        </button>
-        <button
-          type="submit"
-          onClick={kumiteChangeHandler}
-          className="bg-blue-600 w-30 h-15 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 hover:bg-red-600"
-        >
-          Shuffle Team
-        </button>
+        <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row  pt-[120px] pb-[120px]">
+          <button
+            type="submit"
+            onClick={cardSortChangeHandler}
+            className="bg-blue-600 w-30 h-15 mx-2 px-6 py-3 uppercase font-semibold rounded-sm opacity-80 inline-block hover:bg-red-600"
+          >
+            Kumite!
+          </button>
+          <button
+            type="submit"
+            onClick={kumiteChangeHandler}
+            className="bg-blue-600 w-30 h-15 mx-2 px-6 py-3 uppercase font-semibold inline-block rounded-sm opacity-80 hover:bg-red-600"
+          >
+            Shuffle Team
+          </button>
+        </div>
         <CondRender kumite={kumite} />
-        {/* <SortingLogic info={cardVar} /> */}
       </div>
     </div>
   );
