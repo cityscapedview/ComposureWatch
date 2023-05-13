@@ -5,18 +5,12 @@ import CheckMark from "../SVG/CheckMarkSvg";
 import XMarkSvg from "../SVG/XMarkSvg";
 import React, { useState } from "react";
 
-const PlayerCards = ({
-  id,
-  name,
-  character,
-  rank,
-  cardRemoveChangeHandler,
-}) => {
+const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler }) => {
   const [visible, setVisible] = useState(false);
 
   const clickHandler = () => {
     const enteredId = id;
-    cardRemoveChangeHandler(enteredId);
+    onRemoveChangeHandler(enteredId);
   };
 
   return (
