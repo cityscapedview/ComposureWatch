@@ -9,8 +9,7 @@ const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler }) => {
   const [visible, setVisible] = useState(false);
 
   const clickHandler = () => {
-    const cardId = id;
-    onRemoveChangeHandler(cardId);
+    onRemoveChangeHandler(id);
   };
 
   return (
