@@ -62,7 +62,7 @@ const CreateCard = () => {
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList
-          info={cards}
+          cards={cards}
           cardRemoveChangeHandler={cardRemoveChangeHandler}
         />
         <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row pt-[120px] pb-[120px]">

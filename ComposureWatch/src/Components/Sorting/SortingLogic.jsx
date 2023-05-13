@@ -83,7 +83,7 @@ const SortingLogic = (props) => {
   return (
     <>
       <div>
-        <TeamOneCardList info={teamOne} />
+        <TeamOneCardList cards={teamOne} />
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
         <div className="text-[#F5122A] text-xl">
@@ -97,7 +97,7 @@ const SortingLogic = (props) => {
         </div>
       </div>
       <div>
-        <TeamTwoCardList info={teamTwo} />
+        <TeamTwoCardList cards={teamTwo} />
       </div>
     </>
   );
