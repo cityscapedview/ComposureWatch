@@ -35,6 +35,14 @@ const CreateCard = () => {
     setCardVar(currentCards);
   };
 
+  const cardRemoveChangeHandler = (cardId) => {
+    setCards((prevCards) => {
+      return prevCards.filter((card) => {
+        return card.id !== cardId;
+      });
+    });
+  };
+
   const CondRender = ({ kumite }) => {
     if (kumite === false) {
       return <SortingLogic info={cardVar} />;
@@ -53,8 +61,11 @@ const CreateCard = () => {
         <CardForm onSaveCharData={onSaveCharDataHandler} />
       </div>
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
-        <CardList info={cards} />
-        <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row  pt-[120px] pb-[120px]">
+        <CardList
+          info={cards}
+          onRemoveChangeHandler={cardRemoveChangeHandler}
+        />
+        <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row pt-[120px] pb-[120px]">
           <button
             type="submit"
             onClick={cardSortChangeHandler}
