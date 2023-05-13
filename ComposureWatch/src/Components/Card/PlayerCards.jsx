@@ -1,8 +1,8 @@
 import RankIcon from "./Icons/RankIcon";
 import CharIcon from "./Icons/CharIcon";
 import checkMark from "../../images/icons/checkMark.png";
-import CheckMark from "../SVG/CheckMarkSvg";
-import XMarkSvg from "../SVG/XMarkSvg";
+import CheckmarkIcon from "../SVG/CheckMarkSvg";
+import XmarkIcon from "../SVG/XMarkSvg";
 import React, { useState } from "react";
 
 const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler }) => {
@@ -33,8 +33,8 @@ const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler }) => {
               {/* {!visible && (
                 <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
               )} */}
-              {!visible && <CheckMark />}
-              {visible && <XMarkSvg />}
+              {!visible && <CheckmarkIcon />}
+              {visible && <XmarkIcon />}
             </button>
           </div>
         </div>
