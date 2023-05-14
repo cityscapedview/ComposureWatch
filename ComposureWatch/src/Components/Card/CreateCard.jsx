@@ -64,7 +64,7 @@ const CreateCard = () => {
         <CardList
           cards={cards}
           cardRemoveChangeHandler={cardRemoveChangeHandler}
-          team={"teamTwo"}
+          team={"cardPool"}
         />
         <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row pt-[120px] pb-[120px]">
           <button
