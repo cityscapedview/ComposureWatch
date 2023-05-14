@@ -27,17 +27,22 @@ const PlayerSuperCards = ({
     text: "text-[#2EF3FF]",
   };
 
-  // let teamTheme = (team) => {
-  //   team === teamOne;
-  //   return (theme = {
-  //     border: "border-[#F5122A]",
-  //     shadow: "shadow-[#250509]",
-  //     background: "bg-[#250509]",
-  //     text: "text-[#F5122A]",
-  //   });
-  // };
+  let teamTheme = (team) => {
+    if (team === teamOne) {
+      return (theme = {
+        border: "border-[#F5122A]",
+        shadow: "shadow-[#250509]",
+        background: "bg-[#250509]",
+        text: "text-[#F5122A]",
+      });
+    } else {
+      return theme;
+    }
+  };
 
-  // teamTheme(teamOne);
+  let teamTwo = 3;
+  let teamOne;
+  teamTheme(teamTwo);
 
   return (
     <li key={id} className="px-0">
