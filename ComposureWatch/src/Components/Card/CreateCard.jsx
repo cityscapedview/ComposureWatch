@@ -1,20 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CardForm from "./CardForm";
 import CardList from "./CardList";
 import SortingLogic from "../Sorting/SortingLogic";
 
-const DUMMY_CARDS = [
-  {
-    id: 1337,
-    name: "Zen",
-    character: "ana",
-    rank: "platinum3",
-    rating: 1.35,
-  },
-];
-
 const CreateCard = () => {
-  const [cards, setCards] = useState(DUMMY_CARDS);
+  const [cards, setCards] = usePersistState([], "cards");
+
+  function usePersistState(defaultValue, key) {
+    const [value, setValue] = React.useState(() => {
+      const persistValue = window.localStorage.getItem(key);
+      return persistValue !== null ? JSON.parse(persistValue) : defaultValue;
+    });
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
+    return [value, setValue];
+  }
 
   const [kumite, setKumite] = useState(false);
 
