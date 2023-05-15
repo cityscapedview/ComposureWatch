@@ -103,6 +103,7 @@ const CardForm = (props) => {
           <option value="baptiste">Baptiste</option>
           <option value="brigitte">Brigitte</option>
           <option value="kiriko">Kiriko</option>
+          <option value="lifeweaver">Lifeweaver</option>
           <option value="lucio">Lucio</option>
           <option value="mercy">Mercy</option>
           <option value="moira">Moira</option>

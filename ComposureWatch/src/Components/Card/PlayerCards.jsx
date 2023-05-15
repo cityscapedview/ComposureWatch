@@ -1,23 +1,16 @@
 import RankIcon from "./Icons/RankIcon";
 import CharIcon from "./Icons/CharIcon";
 import checkMark from "../../images/icons/checkMark.png";
-import CheckMark from "../SVG/CheckMarkSvg";
-import XMarkSvg from "../SVG/XMarkSvg";
+import CheckmarkIcon from "../SVG/CheckMarkSvg";
+import XmarkIcon from "../SVG/XMarkSvg";
 import React, { useState } from "react";
 
-const PlayerCards = ({
-  id,
-  name,
-  character,
-  rank,
-  cardRemoveChangeHandler,
-  team,
-}) => {
+
+const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler, team }) => {
   const [visible, setVisible] = useState(false);
 
   const clickHandler = () => {
-    const enteredId = id;
-    cardRemoveChangeHandler(enteredId);
+    onRemoveChangeHandler(id);
   };
 
   let theme = {
@@ -74,10 +67,10 @@ const PlayerCards = ({
                 {/* {!visible && (
                 <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
               )} */}
-                {!visible && <CheckMark />}
-                {visible && <XMarkSvg />}
-              </button>
-            )}
+
+              {!visible && <CheckmarkIcon />}
+              {visible && <XmarkIcon />}
+            </button>)
           </div>
         </div>
       </div>

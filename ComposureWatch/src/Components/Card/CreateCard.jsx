@@ -35,10 +35,10 @@ const CreateCard = () => {
     setCardVar(currentCards);
   };
 
-  const cardRemoveChangeHandler = (enteredId) => {
+  const cardRemoveChangeHandler = (cardId) => {
     setCards((prevCards) => {
-      return prevCards.filter((object) => {
-        return object.id !== enteredId;
+      return prevCards.filter((card) => {
+        return card.id !== cardId;
       });
     });
   };
@@ -63,8 +63,8 @@ const CreateCard = () => {
       <div className="bg-black flex flex-col justify-center items-center gap-y-4 uppercase text-white py-40 px-10">
         <CardList
           cards={cards}
-          cardRemoveChangeHandler={cardRemoveChangeHandler}
           team={"cardPool"}
+          onRemoveChangeHandler={cardRemoveChangeHandler}
         />
         <div className="flex flex-col gap-y-3 md:gap-y-0 md:flex-row pt-[120px] pb-[120px]">
           <button
