@@ -3,16 +3,6 @@ import CardForm from "./CardForm";
 import CardList from "./CardList";
 import SortingLogic from "../Sorting/SortingLogic";
 
-const DUMMY_CARDS = [
-  {
-    id: 1337,
-    name: "Zen",
-    character: "ana",
-    rank: "platinum3",
-    rating: 1.35,
-  },
-];
-
 const CreateCard = () => {
   const [cards, setCards] = usePersistState([], "cards");
 
