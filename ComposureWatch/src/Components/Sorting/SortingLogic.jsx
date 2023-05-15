@@ -1,5 +1,6 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
 import CardList from "../Card/CardList";
+import shuffle from "./shuffle";
 
 const SortingLogic = (props) => {
   // Logic instructions:
@@ -15,26 +16,6 @@ const SortingLogic = (props) => {
   let teamTwoVal = 0;
 
   //Fischer-Yates shuffle aglorithm to randomize order each render.  This one is a famous shuffling method I did not create.  Props to the creators.
-
-  function shuffle(array) {
-    let currentIndex = array.length,
-      randomIndex;
-
-    // While there remain elements to shuffle.
-    while (currentIndex != 0) {
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ];
-    }
-
-    return array;
-  }
 
   shuffle(props.info);
 
