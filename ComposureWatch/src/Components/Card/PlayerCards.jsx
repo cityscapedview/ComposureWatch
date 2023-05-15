@@ -5,8 +5,14 @@ import CheckmarkIcon from "../SVG/CheckMarkSvg";
 import XmarkIcon from "../SVG/XMarkSvg";
 import React, { useState } from "react";
 
-
-const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler, team }) => {
+const PlayerCards = ({
+  id,
+  name,
+  character,
+  rank,
+  onRemoveChangeHandler,
+  team,
+}) => {
   const [visible, setVisible] = useState(false);
 
   const clickHandler = () => {
@@ -68,9 +74,10 @@ const PlayerCards = ({ id, name, character, rank, onRemoveChangeHandler, team })
                 <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
               )} */}
 
-              {!visible && <CheckmarkIcon />}
-              {visible && <XmarkIcon />}
-            </button>)
+                {!visible && <CheckmarkIcon />}
+                {visible && <XmarkIcon />}
+              </button>
+            )}
           </div>
         </div>
       </div>
