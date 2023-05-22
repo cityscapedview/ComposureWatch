@@ -32,9 +32,19 @@ const SortingLogic = (props) => {
     }
   }
 
-  // Maxes out the amount of players on one team
-  // refactor below into a function for DRY
+  // Ensures that there is not more than a one player advantage
+  if (teamTwo.length - teamOne.length >= 2) {
+    teamTwoVal -= popPlayerTwo.rating;
+    teamOneVal += popPlayerTwo.rating;
+    teamOne.push(popPlayerTwo);
+  } else if (teamOne.length - teamTwo.length >= 2) {
+    let popPlayerOne = teamOne.pop();
+    teamOneVal -= popPlayerOne.rating;
+    teamTwoVal += popPlayerOne.rating;
+    teamTwo.push(popPlayerOne);
+  }
 
+  // Ensures that teams do not exceed six players
   if (teamOne.length > 6) {
     let popPlayerOne = teamOne.pop();
     teamOneVal -= popPlayerOne.rating;
@@ -45,15 +55,6 @@ const SortingLogic = (props) => {
     teamTwoVal -= popPlayerTwo.rating;
     teamOneVal += popPlayerTwo.rating;
     teamOne.push(popPlayerTwo);
-  } else if (teamTwo.length - teamOne.length >= 2) {
-    teamTwoVal -= popPlayerTwo.rating;
-    teamOneVal += popPlayerTwo.rating;
-    teamOne.push(popPlayerTwo);
-  } else if (teamOne.length - teamTwo.length >= 2) {
-    let popPlayerOne = teamOne.pop();
-    teamOneVal -= popPlayerOne.rating;
-    teamTwoVal += popPlayerOne.rating;
-    teamTwo.push(popPlayerOne);
   }
 
   let teamOneLength = teamOne.length;
