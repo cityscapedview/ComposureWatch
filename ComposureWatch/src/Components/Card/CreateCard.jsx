@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardForm from "./CardForm";
 import CardList from "./CardList";
-import SortingLogic from "../Sorting/SortingLogic";
+import TeamCards from "./TeamCards";
 
 const CreateCard = () => {
   const [cards, setCards] = usePersistState([], "cards");
@@ -46,10 +46,10 @@ const CreateCard = () => {
 
   const CondRender = ({ kumite }) => {
     if (kumite === false) {
-      return <SortingLogic info={cardVar} />;
+      return <TeamCards info={cardVar} />;
       // return <div>Dog</div>;
     } else if (kumite === true) {
-      return <SortingLogic info={cardVar} />;
+      return <TeamCards info={cardVar} />;
       // return <div>Cat</div>;
     }
   };

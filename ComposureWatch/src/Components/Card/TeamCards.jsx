@@ -1,7 +1,6 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
-import CardList from "../Card/CardList";
-import shuffle from "./shuffle";
-import teamSorting from "./teamSorting";
+import CardList from "./CardList";
+import teamSorting from "../Sorting/teamSorting";
 
 const SortingLogic = (props) => {
   let teamData = teamSorting(props);
