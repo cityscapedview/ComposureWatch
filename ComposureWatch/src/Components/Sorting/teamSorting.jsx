@@ -20,11 +20,11 @@ const teamSorting = (props) => {
   //Modify function to account for team rating difference
   // For example .5 diff max
   for (let player of props.info) {
-    if (teamTwoVal + player.rating >= teamOneVal) {
-      teamOneVal += player.rating;
+    if (teamTwoVal + player.dpsRating >= teamOneVal) {
+      teamOneVal += player.dpsRating;
       teamOne.push(player);
     } else {
-      teamTwoVal += player.rating;
+      teamTwoVal += player.dpsRating;
       teamTwo.push(player);
     }
   }
