@@ -7,11 +7,11 @@ const CreateCard = () => {
   const [cards, setCards] = usePersistState([], "cards");
 
   function usePersistState(defaultValue, key) {
-    const [value, setValue] = React.useState(() => {
+    const [value, setValue] = useState(() => {
       const persistValue = window.localStorage.getItem(key);
       return persistValue !== null ? JSON.parse(persistValue) : defaultValue;
     });
-    React.useEffect(() => {
+    useEffect(() => {
       window.localStorage.setItem(key, JSON.stringify(value));
     }, [key, value]);
     return [value, setValue];
