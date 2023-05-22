@@ -14,8 +14,12 @@ const CardList = (props) => {
           id={card.id}
           name={card.name}
           character={card.character}
-          rank={card.rank}
-          rating={card.rating}
+          tankRank={card.tankRank}
+          dpsRank={card.dpsRank}
+          supportRank={card.supportRank}
+          tankRating={card.tankRating}
+          dpsRating={card.dpsRating}
+          supportRating={card.supportRating}
           onRemoveChangeHandler={props.onRemoveChangeHandler}
           team={props.team}
         />
