@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ratingSort from "../Sorting/ratingSort";
 
 const CardForm = (props) => {
-  const [enteredName, setEnteredName] = useState("Enter Player Name");
+  const [enteredName, setEnteredName] = useState("");
 
   const [selectedCharacter, setSelectedCharacter] =
     useState("Select Character");
@@ -42,7 +42,7 @@ const CardForm = (props) => {
     };
 
     props.onSaveCharData(charData);
-    setEnteredName("Enter Player Name");
+    setEnteredName("");
     setSelectedCharacter("Select Character");
     setSelectedRank("Select Rank");
   };
@@ -56,6 +56,7 @@ const CardForm = (props) => {
         <label>Name</label>
         <input
           type="text"
+          placeholder="Enter Player Name"
           value={enteredName}
           onChange={nameChangeHandler}
           className="text-black block"
