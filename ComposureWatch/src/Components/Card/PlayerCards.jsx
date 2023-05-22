@@ -9,7 +9,9 @@ const PlayerCards = ({
   id,
   name,
   character,
-  rank,
+  tankRank,
+  dpsRank,
+  supportRank,
   onRemoveChangeHandler,
   team,
 }) => {
@@ -60,7 +62,7 @@ const PlayerCards = ({
               <CharIcon character={character} />
             </div>
             <h2 className="italic text-xl leading-10">{name}</h2>
-            <RankIcon rank={rank} />
+            <RankIcon rank={dpsRank} />
             {team === "cardPool" && (
               <button
                 type="submit"
