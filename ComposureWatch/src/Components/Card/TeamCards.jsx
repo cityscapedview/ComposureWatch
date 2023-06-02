@@ -1,9 +1,11 @@
 // To be determine if ranks will be part of the rank icon list or housed seperately here for values
 import CardList from "./CardList";
 import teamSorting from "../Sorting/teamSorting";
+import weightedTeamSort from "../Sorting/weightedTeamSort";
 
 const TeamCards = (props) => {
   let teamData = teamSorting(props);
+  console.log(weightedTeamSort(props));
 
   return (
     <>
