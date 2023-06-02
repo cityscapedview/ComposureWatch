@@ -34,7 +34,7 @@ const weightedTeamSort = (props) => {
   const roleAssigner = (team, teamComp) => {
     for (let player of team) {
       let randomRole = Math.floor(Math.random() * 3);
-      teamComp[randomRole].push(player);
+      teamComp[randomRole] = player;
     }
     return teamComp;
   };
