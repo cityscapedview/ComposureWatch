@@ -2,7 +2,7 @@
 import CardList from "./CardList";
 import teamSorting from "../Sorting/teamSorting";
 
-const SortingLogic = (props) => {
+const TeamCards = (props) => {
   let teamData = teamSorting(props);
 
   return (
@@ -27,4 +27,4 @@ const SortingLogic = (props) => {
     </>
   );
 };
-export default SortingLogic;
+export default TeamCards;
