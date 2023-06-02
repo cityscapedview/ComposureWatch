@@ -12,8 +12,8 @@ const weightedTeamSort = (props) => {
   let teamTwoTank = [];
   let teamOne = [];
   let teamTwo = [];
-  let teamOneComp = [[teamOneSupport], [teamOneDPS], [teamOneTank]];
-  let teamTwoComp = [[teamTwoSupport], [teamTwoDPS], [teamTwoTank]];
+  let teamOneComp = [teamOneSupport, teamOneDPS, teamOneTank];
+  let teamTwoComp = [teamTwoSupport, teamTwoDPS, teamTwoTank];
 
   // Shuffle Players
   shuffle(props.info);
@@ -34,12 +34,17 @@ const weightedTeamSort = (props) => {
   const roleAssigner = (team, teamComp) => {
     for (let player of team) {
       let randomRole = Math.floor(Math.random() * 3);
-      teamComp[randomRole] = player;
+      if (teamComp[randomRole].length < 2) {
+        teamComp[randomRole].push(player);
+      }
     }
     return teamComp;
   };
 
   roleAssigner(teamOne, teamOneComp);
+  console.log(teamOneDPS);
+  console.log(teamOneSupport);
+  console.log(teamOneTank);
   roleAssigner(teamTwo, teamTwoComp);
 
   // weighted team average
