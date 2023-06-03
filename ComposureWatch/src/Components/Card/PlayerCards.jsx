@@ -28,7 +28,6 @@ const PlayerCards = ({
     text: "text-[#2EF3FF]",
   };
 
-  console.log(team);
   let teamOne;
   let teamTheme = (team) => {
     if (team === "teamOne") {

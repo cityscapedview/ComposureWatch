@@ -20,14 +20,9 @@ const weightedTeamSort = (props) => {
 
   //Randomly assign players to two teams
   for (let player of props.info) {
-    teamTwo.length - teamOne.length >= 2
+    teamTwo.length - teamOne.length >= 1
       ? teamOne.push(player)
       : teamTwo.push(player);
-  }
-
-  // Function that generates random number
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
   }
 
   // Randomly assign roles into 6 objects
@@ -36,15 +31,22 @@ const weightedTeamSort = (props) => {
       let randomRole = Math.floor(Math.random() * 3);
       if (teamComp[randomRole].length < 2) {
         teamComp[randomRole].push(player);
+      } else {
+        let min = teamComp[randomRole];
+        for (let teamRole in teamComp) {
+          console.log(teamComp[teamRole]);
+          // The issue with the logic below is that if Role1 & Role2 length = 2, min gets returned.
+          teamComp[teamRole].length > min.length
+            ? (min = teamComp[teamRole])
+            : min;
+        }
+        return min.push(player);
       }
     }
     return teamComp;
   };
 
   roleAssigner(teamOne, teamOneComp);
-  console.log(teamOneDPS);
-  console.log(teamOneSupport);
-  console.log(teamOneTank);
   roleAssigner(teamTwo, teamTwoComp);
 
   // weighted team average
