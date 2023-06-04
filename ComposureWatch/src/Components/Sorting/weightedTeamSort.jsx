@@ -45,6 +45,26 @@ const weightedTeamSort = (props) => {
   roleAssigner(teamTwo, teamTwoComp);
 
   // weighted team average
+  // Determines rating of each team role
+  const roleValue = (teamRole, rating) => {
+    let roleRating;
+    for (let player of teamRole) {
+      console.log(player.dpsRating);
+      console.log(teamOneDPS);
+      roleRating = player[rating];
+    }
+    return roleRating;
+  };
+
+  console.log(roleValue(teamOneDPS, "dpsRating"));
+
+  // weights the roles to return overall team value
+
+  // const teamRating = (teamSupport, teamDps, teamTank) => {
+  //   let weightedSupport = roleValue(teamSupport);
+  //   let weightedTank = roleValue(teamDps);
+  //   let weightedDPS = roleValue(teamTank);
+  // };
 
   // if team averages are not equal resort
 
