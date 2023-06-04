@@ -47,11 +47,9 @@ const weightedTeamSort = (props) => {
   // weighted team average
   // Determines rating of each team role
   const roleValue = (teamRole, rating) => {
-    let roleRating;
+    let roleRating = 0;
     for (let player of teamRole) {
-      console.log(player.dpsRating);
-      console.log(teamOneDPS);
-      roleRating = player[rating];
+      roleRating += player[rating];
     }
     return roleRating;
   };
