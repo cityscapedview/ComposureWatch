@@ -32,15 +32,10 @@ const weightedTeamSort = (props) => {
       if (teamComp[randomRole].length < 2) {
         teamComp[randomRole].push(player);
       } else {
-        let min = teamComp[randomRole];
-        for (let teamRole in teamComp) {
-          console.log(teamComp[teamRole]);
-          // The issue with the logic below is that if Role1 & Role2 length = 2, min gets returned.
-          teamComp[teamRole].length > min.length
-            ? (min = teamComp[teamRole])
-            : min;
-        }
-        return min.push(player);
+        const smallRole = teamComp.reduce((prev, next) =>
+          prev.length > next.length ? next : prev
+        );
+        smallRole.push(player);
       }
     }
     return teamComp;
