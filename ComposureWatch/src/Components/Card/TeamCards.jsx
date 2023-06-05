@@ -4,13 +4,27 @@ import teamSorting from "../Sorting/teamSorting";
 import weightedTeamSort from "../Sorting/weightedTeamSort";
 
 const TeamCards = (props) => {
-  let teamData = teamSorting(props);
   console.log(weightedTeamSort(props));
+  // console.log(teamSorting(props));
+
+  // let teamData = teamSorting(props);
+  let teamData = weightedTeamSort(props);
 
   return (
     <>
       <div>
-        <CardList cards={teamData.teamOne} team={"teamOne"} />
+        {/* Replace with map */}
+        <div>
+          {/* support */}
+          <div>Support</div>
+          <CardList cards={teamData.teamOne[0]} team={"teamOne"} />
+          {/* DPS */}
+          <div>DPS</div>
+          <CardList cards={teamData.teamOne[1]} team={"teamOne"} />
+          {/* Tank */}
+          <div>Tank</div>
+          <CardList cards={teamData.teamOne[2]} team={"teamOne"} />
+        </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
         <div className="text-[#F5122A] text-xl">
@@ -24,7 +38,18 @@ const TeamCards = (props) => {
         </div>
       </div>
       <div>
-        <CardList cards={teamData.teamTwo} team={"teamTwo"} />
+        {/* Replace with Map */}
+        <div>
+          {/* Support */}
+          <div>Support</div>
+          <CardList cards={teamData.teamTwo[0]} team={"teamTwo"} />
+          {/* DPS */}
+          <div>DPS</div>
+          <CardList cards={teamData.teamTwo[1]} team={"teamTwo"} />
+          {/* Tank */}
+          <div>Tank</div>
+          <CardList cards={teamData.teamTwo[2]} team={"teamTwo"} />
+        </div>
       </div>
     </>
   );

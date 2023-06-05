@@ -12,8 +12,8 @@ const weightedTeamSort = (props) => {
   let teamTwoTank = [];
   let teamOne = [];
   let teamTwo = [];
-  let teamOneVal;
-  let teamTwoVal;
+  let teamOneVal = 0;
+  let teamTwoVal = 0;
   let teamOneComp = [teamOneSupport, teamOneDPS, teamOneTank];
   let teamTwoComp = [teamTwoSupport, teamTwoDPS, teamTwoTank];
 
@@ -85,8 +85,8 @@ const weightedTeamSort = (props) => {
     teamTwo: teamTwoComp,
     teamOneLength: teamOne.length,
     teamTwoLength: teamTwo.length,
-    teamOneVal: teamOneVal,
-    teamTwoVal: teamTwoVal,
+    teamOneVal: Number(teamOneVal),
+    teamTwoVal: Number(teamTwoVal),
   };
 
   return teamData;
