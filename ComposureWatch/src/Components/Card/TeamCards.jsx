@@ -4,7 +4,6 @@ import teamSorting from "../Sorting/teamSorting";
 import weightedTeamSort from "../Sorting/weightedTeamSort";
 
 const TeamCards = (props) => {
-  console.log(weightedTeamSort(props));
   // console.log(teamSorting(props));
 
   // let teamData = teamSorting(props);
