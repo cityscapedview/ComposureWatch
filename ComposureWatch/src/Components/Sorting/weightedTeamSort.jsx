@@ -12,9 +12,12 @@ const weightedTeamSort = (props) => {
   let teamTwoTank = [];
   let teamOne = [];
   let teamTwo = [];
+  let teamOneVal;
+  let teamTwoVal;
   let teamOneComp = [teamOneSupport, teamOneDPS, teamOneTank];
   let teamTwoComp = [teamTwoSupport, teamTwoDPS, teamTwoTank];
 
+  // do {
   // Shuffle Players
   shuffle(props.info);
 
@@ -58,14 +61,23 @@ const weightedTeamSort = (props) => {
 
   // weights the roles to return overall team value
 
-  // const teamRating = (teamSupport, teamDps, teamTank) => {
-  //   let weightedSupport = roleValue(teamSupport);
-  //   let weightedTank = roleValue(teamDps);
-  //   let weightedDPS = roleValue(teamTank);
-  // };
+  const teamRating = (teamSupport, teamDps, teamTank) => {
+    let weightedSupport = roleValue(teamSupport, "supportRating") * 0.3;
+    let weightedTank = roleValue(teamDps, "dpsRating") * 0.3;
+    let weightedDPS = roleValue(teamTank, "tankRating") * 0.4;
+    let weightedTotal = weightedSupport + weightedTank + weightedDPS;
+    return weightedTotal.toFixed(0);
+  };
+
+  teamOneVal = teamRating(teamOneSupport, teamOneDPS, teamOneTank);
+
+  teamTwoVal = teamRating(teamTwoSupport, teamTwoDPS, teamTwoTank);
+
+  console.log(teamOneVal);
+  console.log(teamTwoVal);
 
   // if team averages are not equal resort
-
+  // } while (teamOneVal !== teamTwoVal);
   //return data object
 
   let teamData = {
@@ -73,8 +85,8 @@ const weightedTeamSort = (props) => {
     teamTwo: teamTwoComp,
     teamOneLength: teamOne.length,
     teamTwoLength: teamTwo.length,
-    // teamOneVal: teamOneVal,
-    // teamTwoVal: teamTwoVal,
+    teamOneVal: teamOneVal,
+    teamTwoVal: teamTwoVal,
   };
 
   return teamData;
