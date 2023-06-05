@@ -14,7 +14,7 @@ const TeamCards = (props) => {
     <>
       <div>
         {/* Replace with map */}
-        <div>
+        <div className="flex flex-row">
           {/* support */}
           <div>Support</div>
           <CardList cards={teamData.teamOne[0]} team={"teamOne"} />
@@ -39,7 +39,7 @@ const TeamCards = (props) => {
       </div>
       <div>
         {/* Replace with Map */}
-        <div>
+        <div className="flex flex-row">
           {/* Support */}
           <div>Support</div>
           <CardList cards={teamData.teamTwo[0]} team={"teamTwo"} />
