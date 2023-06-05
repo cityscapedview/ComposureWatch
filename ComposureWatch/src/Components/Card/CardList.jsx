@@ -7,8 +7,18 @@ const CardList = (props) => {
     return <h2>No Cards</h2>;
   }
 
+  let styling;
+
+  console.log(props.team);
+
+  if (props.team === "cardPool") {
+    styling = "grid col-1 sm:grid-cols-3 md:grid-cols-6 gap-x-6 gap-y-8";
+  } else {
+    styling = "grid col-1 sm:grid-cols-2 gap-x-6 gap-y-8";
+  }
+
   return (
-    <ul className="grid col-1 sm:grid-cols-3 md:grid-cols-6 gap-x-6 gap-y-8">
+    <ul className={`${styling}`}>
       {props.cards.map((card) => (
         <PlayerCards
           id={card.id}

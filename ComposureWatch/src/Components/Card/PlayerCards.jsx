@@ -70,11 +70,6 @@ const PlayerCards = ({
                 onMouseLeave={() => setVisible(false)}
                 className="p-1.5 mt-[-7px] border-[#2EF3FF] bg-[#0E3575] border-opacity-75 rounded-full border-[2px] cursor-pointer hover:bg-[#250509] hover:border-[#DD1929] hover:duration-150"
               >
-                {/* Can't decide which checkmark looks better */}
-                {/* {!visible && (
-                <img src={checkMark} alt="checkmark" className="h-[18px]"></img>
-              )} */}
-
                 {!visible && <CheckmarkIcon />}
                 {visible && <XmarkIcon />}
               </button>

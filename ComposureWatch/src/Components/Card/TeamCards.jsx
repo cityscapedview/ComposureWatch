@@ -14,16 +14,22 @@ const TeamCards = (props) => {
     <>
       <div>
         {/* Replace with map */}
-        <div className="flex flex-row">
+        <div className="grid col-1 md:grid-cols-3 gap-x-6 gap-y-8">
           {/* support */}
-          <div>Support</div>
-          <CardList cards={teamData.teamOne[0]} team={"teamOne"} />
+          <div>
+            Support
+            <CardList cards={teamData.teamOne[0]} team={"teamOne"} />
+          </div>
           {/* DPS */}
-          <div>DPS</div>
-          <CardList cards={teamData.teamOne[1]} team={"teamOne"} />
+          <div>
+            DPS
+            <CardList cards={teamData.teamOne[1]} team={"teamOne"} />
+          </div>
           {/* Tank */}
-          <div>Tank</div>
-          <CardList cards={teamData.teamOne[2]} team={"teamOne"} />
+          <div>
+            Tank
+            <CardList cards={teamData.teamOne[2]} team={"teamOne"} />
+          </div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center py-6 md:space-x-52">
@@ -39,16 +45,22 @@ const TeamCards = (props) => {
       </div>
       <div>
         {/* Replace with Map */}
-        <div className="flex flex-row">
+        <div className="grid col-1 md:grid-cols-3 gap-x-6 gap-y-8">
           {/* Support */}
-          <div>Support</div>
-          <CardList cards={teamData.teamTwo[0]} team={"teamTwo"} />
+          <div>
+            Support
+            <CardList cards={teamData.teamTwo[0]} team={"teamTwo"} />
+          </div>
           {/* DPS */}
-          <div>DPS</div>
-          <CardList cards={teamData.teamTwo[1]} team={"teamTwo"} />
+          <div>
+            DPS
+            <CardList cards={teamData.teamTwo[1]} team={"teamTwo"} />
+          </div>
           {/* Tank */}
-          <div>Tank</div>
-          <CardList cards={teamData.teamTwo[2]} team={"teamTwo"} />
+          <div>
+            Tank
+            <CardList cards={teamData.teamTwo[2]} team={"teamTwo"} />
+          </div>
         </div>
       </div>
     </>
