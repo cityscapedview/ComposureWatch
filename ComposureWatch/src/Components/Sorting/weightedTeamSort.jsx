@@ -33,13 +33,27 @@ const weightedTeamSort = (props) => {
     const roleAssigner = (team, teamComp) => {
       for (let player of team) {
         let randomRole = Math.floor(Math.random() * 3);
-        if (teamComp[randomRole].length < 2) {
+        if (teamComp[randomRole] === teamComp[2] && teamComp[2].length < 1) {
+          teamComp[randomRole].push(player);
+        } else if (
+          teamComp[randomRole].length < 2 &&
+          teamComp[randomRole] !== teamComp[2]
+        ) {
           teamComp[randomRole].push(player);
         } else {
           const smallRole = teamComp.reduce((prev, next) =>
             prev.length > next.length ? next : prev
           );
-          smallRole.push(player);
+          console.log(teamComp[2]);
+          console.log(smallRole);
+          if (smallRole === teamComp[2] && smallRole.length === 1) {
+            const nonTankRole = teamComp.filter(
+              (r) => (r !== smallRole) & (r < 2)
+            );
+            nonTankRole.push(player);
+          } else {
+            smallRole.push(player);
+          }
         }
       }
       return teamComp;
